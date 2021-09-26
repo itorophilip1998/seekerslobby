@@ -1,0 +1,167 @@
+
+/* headers */
+:root {
+  --primary: #F47806 !important;
+}
+
+.text-primary{
+    color:#F47806 !important;
+}
+.border-primary{
+    border-color:#F47806 !important;
+}
+.bg-primary,.badge-primary{
+    background-color:#F47806 !important;
+}
+.btn-primary{
+    background-color:#F47806 !important;
+    border:none !important;
+}
+.btn-primary:focus,.btn-primary:hover {
+    background-color:#b95f0b !important;
+    border:none !important;
+    outline: #b95f0b !important;
+    box-shadow:none !important;
+}
+.rounded-x{
+  border-radius: 10px;
+}
+.nav-link{
+  width: 100px;
+  color: black !important;
+  border-bottom:2px solid white !important;
+
+}
+.nav-link:hover {
+  border-bottom:1px solid #f0e5db !important ;
+  border-radius: 2px;
+}
+ .nav-link:focus{
+  border-bottom:2px solid #F47806 !important ;
+  border-radius: 2px;
+}
+
+
+/* index headers section*/
+#header-section{
+  background-image:url(~assets/images/bg2.png)
+}
+.searchbox{
+  width: 34%;
+  outline: none !important;
+}
+.boldtext{
+font-size:  70px ;
+line-height:59px;
+letter-spacing: 0.04em;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-style: normal;
+font-weight: normal
+}
+.searchbtn{
+ position: absolute;
+  padding:7px 40px !important;
+  right:22px
+}
+
+.pcleft,.pcleft2{
+  position: absolute !important;
+  visibility: hidden !important;
+width: 230px;
+ left: 70px;
+top: 257px;
+z-index: -1 !important;
+transform: rotate(31.67deg);
+}
+.pcleft2{
+  z-index: 0 !important;
+  top: 177px;
+
+}
+.headerbtn>button{
+  width:40%;
+}
+
+
+/* getbest-team */
+#getbest-team{
+  background-image:url(~assets/images/bg1.png)
+
+}
+
+/* need something */
+#needsomething{
+  background: rgba(244, 120, 6, 0.08) !important;
+}
+.do{
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 65px;
+  color: #000000;
+  }
+label{
+  position: absolute;
+  margin-top:-10px;
+  background: white;
+  margin-left:10px;
+}
+.form-control:focus{
+   outline: rgba(244, 121, 6, 0.808) !important;
+   box-shadow:0 0 10px rgba(244, 121, 6, 0.719) !important;
+   border:1px solid rgba(244, 121, 6, 0.781) !important
+}
+
+
+/* @media queries */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .boldtext{
+    font-size:  35px !important;
+    line-height: 31px !important;
+  }
+  .headerbtn>button{
+    width:60%;
+    margin-top: 13px;
+  }
+  .do{
+
+    font-size: 22px;
+    line-height: 26px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .boldtext{
+    font-size:  45px !important ;
+    line-height: 41px !important ;
+  }
+  .do{
+
+    font-size: 35px;
+    line-height: 36px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .pcleft,.pcleft2{
+    visibility: visible !important;
+  }
+  .boldtext{
+    font-size:  70px  !important;
+    line-height:59px !important;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
