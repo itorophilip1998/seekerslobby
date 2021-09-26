@@ -112,11 +112,11 @@
                      </p>
                   </div>
 
-                  <div class="col-lg-7 mr-lg-auto order-first order-lg-last">
+                  <div class="col-lg-7 ml-lg-auto order-first order-lg-last">
                     <h1 class="do p-0 p-md-4">
                       Do You Need Something  Done Right?
                       <br>
-                 <button class="btn-primary mt-3 btn rounded-x p-2 px-5">Hire a freelancer</button>
+                 <button class="btn-primary mt-4 btn rounded-x p-2 px-5">Hire a freelancer</button>
                     </h1>
 
                   </div>
@@ -132,25 +132,116 @@
      </div>
 
      <!-- contacts/about -->
-     <div id="contact">
+     <div id="contact" class="bg-light">
       <div class="container-fluid">
+         <div class="col-md-8 m-auto text-center pt-5 pb-3 p-0">
+              <h3><strong class="text-primary ">Some important FAQ</strong></h3>
+              <p class="p-0">Need some help with joining or using SeekersLoby? Please, send a message to support@seerkerslobby.com 📨 and we’ll get back to you.🙂</p>
+          </div>
         <div class="row">
-          <div class="col-md-7"></div>
-          <div class="col-md-4 p-2">
-            <form action="" class="border border-primary p-4 rounded-x">
+          <div class="col-md-6 mx-md-auto">
+             <section class="accordion-section clearfix mt-3" aria-label="Question Accordions">
+        <div class="">
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+            <div class="panel-heading p-3 mb-3" role="tab" id="heading0">
+            <h3 class="panel-title">
+              <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse0" aria-expanded="true" aria-controls="collapse0">
+                What is Seekerslobby?
+              </a>
+            </h3>
+            </div>
+            <div id="collapse0" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading0">
+            <div class="panel-body px-3 mb-4">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat cupiditate autem, recusandae quaerat tenetur et praesentium repellendus iure unde enim veritatis accusantium consequuntur amet quisquam error corrupti corporis odit aspernatur!</p>
+            </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading p-3 mb-3" role="tab" id="heading1">
+            <h3 class="panel-title">
+              <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                How do I apply for job?
+              </a>
+            </h3>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+            <div class="panel-body px-3 mb-4">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat cupiditate autem, recusandae quaerat tenetur et praesentium repellendus iure unde enim veritatis accusantium consequuntur amet quisquam error corrupti corporis odit aspernatur!</p>
+            </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading p-3 mb-3" role="tab" id="heading1">
+            <h3 class="panel-title">
+              <a class="collapse6" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="true" aria-controls="collapse1">
+                How do i know i'm employed here?
+              </a>
+            </h3>
+            </div>
+            <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+            <div class="panel-body px-3 mb-4">
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat cupiditate autem, recusandae quaerat tenetur et praesentium repellendus iure unde enim veritatis accusantium consequuntur amet quisquam error corrupti corporis odit aspernatur!</p>
+
+            </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading p-3 mb-3" role="tab" id="heading1">
+            <h3 class="panel-title">
+              <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="true" aria-controls="collapse1">
+                How can I employ job seekers?
+              </a>
+            </h3>
+            </div>
+            <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading1">
+            <div class="panel-body px-3 mb-4">
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat cupiditate autem, recusandae quaerat tenetur et praesentium repellendus iure unde enim veritatis accusantium consequuntur amet quisquam error corrupti corporis odit aspernatur!</p>
+
+            </div>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading p-3 mb-3" role="tab" id="heading5">
+            <h3 class="panel-title">
+              <a class="collapsed" role="button" title="" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="true" aria-controls="collapse5">
+               How can i post jobs?
+              </a>
+            </h3>
+            </div>
+            <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
+            <div class="panel-body px-3 mb-4">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat cupiditate autem, recusandae quaerat tenetur et praesentium repellendus iure unde enim veritatis accusantium consequuntur amet quisquam error corrupti corporis odit aspernatur!</p>
+  </div>
+            </div>
+          </div>
+
+          </div>
+
+        </div>
+      </section>
+          </div>
+        <div class="col-md-4 p-2 m-md-auto">
+            <form action="" class="border border-primary p-lg-4 p-2 rounded-x">
+              <h4><strong class="text-primary ">Have any questions?</strong></h4>
+              <br>
               <div class="form-group">
-                <label for="email">Email</label>
-                <input type="text" class="form-control p-3 rounded-x shadow-x" name="email" id="" aria-describedby="helpId" placeholder="">
+                <label for="email" class="bg-light">Email</label>
+                <input type="text" class="form-control p-3 rounded-x" name="email" id="" aria-describedby="helpId" placeholder="">
                 <small id="helpId" class="form-text d-none text-muted">Help text</small>
               </div>
               <div class="form-group">
-                <label for="subject">Subject</label>
-                <input type="text" class="form-control p-3 rounded-x shadow-x" name="subject" id="" aria-describedby="helpId" placeholder="">
+                <label for="subject" class="bg-light">Subject</label>
+                <input type="text" class="form-control p-3 rounded-x" name="subject" id="" aria-describedby="helpId" placeholder="">
                 <small id="helpId" class="form-text d-none text-muted">Help text</small>
               </div>
               <div class="form-group">
-                <label for="message">Message</label>
-                <textarea type="text" class="form-control p-3 rounded-x shadow-x" rows="5" name="message" id="" aria-describedby="helpId" placeholder=""></textarea>
+                <label for="message" class="bg-light">Message</label>
+                <textarea type="text" class="form-control p-3 rounded-x" rows="5" name="message" id="" aria-describedby="helpId" placeholder=""></textarea>
                 <small id="helpId" class="form-text d-none text-muted">Help text</small>
               </div>
               <div class="form-group">
@@ -164,7 +255,11 @@
 
      <!-- ournumber -->
      <div id="our-numbers">
-
+        <div class="row m-0">
+          <div class="col-md-6 col-lg-2">
+              
+          </div>
+        </div>
      </div>
   </div>
 </template>

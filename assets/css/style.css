@@ -109,7 +109,61 @@ label{
 .form-control:focus{
    outline: rgba(244, 121, 6, 0.808) !important;
    box-shadow:0 0 10px rgba(244, 121, 6, 0.719) !important;
-   border:1px solid rgba(244, 121, 6, 0.781) !important
+   border:1px solid #f47906c7 !important
+}
+/* Faq */
+.panel-title>a{
+  font-family: Arial, Verdana;
+  /* font-weight: 600; */
+  font-size: 16px !important;
+  color: rgb(61, 59, 59) !important;
+  text-decoration: none !important;
+}
+.accordion-section .panel-default > .panel-heading {
+  border: 0;
+  background: #f4f4f4;
+  padding: 0;
+}
+.accordion-section .panel-default .panel-title a {
+  display: block;
+  font-size: 18px;
+}
+.accordion-section .panel-default .panel-title a:after {
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-size: 1.4rem;
+  content: "\f106";
+  color: var(--primary);
+  float: right;
+}
+.accordion-section .panel-default .panel-title a.collapsed:after {
+  content: "\f107";
+}
+.accordion-section .panel-default .panel-body {
+  font-size: 1rem;
+}
+.panel-heading{
+ background:white !important;
+ box-shadow:0 0 10px rgb(226, 223, 223);
+ border-radius:4px;
+}
+/* .shadow-x{
+  box-shadow:0 0 10px rgb(202, 201, 201);
+
+ } */
+ ::selection {
+  background: var(--primary) !important;
+  color: white !important;
+}
+
+/* our-numbers */
+#our-numbers{
+background-image: url(~assets/images/our-numbers.png);
+min-height: 100vh;
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
+background-repeat: no-repeat;
 }
 
 
@@ -150,6 +204,7 @@ label{
     }
 }
 
+
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .pcleft,.pcleft2{
@@ -159,6 +214,10 @@ label{
     font-size:  70px  !important;
     line-height:59px !important;
   }
+  .do{
+    font-size: 50px;
+    line-height: 65px;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
