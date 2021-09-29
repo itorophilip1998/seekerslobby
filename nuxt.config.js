@@ -126,7 +126,7 @@ export default {
     strategies: {
         'laravelJWT': {
           scheme: 'refresh',
-          url: 'https://paddipay.xyz',
+          url: 'https://seekerslobby.com',
           endpoints: {
             login: { url: "/api/auth/signin", method: "post", propertyName: "access_token" },
             logout: { url: "/api/auth/signout", method: "post" },

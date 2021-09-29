@@ -255,9 +255,58 @@
 
      <!-- ournumber -->
      <div id="our-numbers">
-        <div class="row m-0">
-          <div class="col-md-6 col-lg-2">
-              
+       <h2 class="text-center text-white"><b>
+         Seekerslobby in number
+         </b></h2>
+          <div class="container-fluid padtop">
+          <div class="row m-0">
+            <div class="col-md-6 col-lg-2 text-center mx-auto">
+              <div class="img">
+                <img src="~assets/images/users.png" alt="">
+              </div>
+              <p class="smartfont p-2 text-white">
+                <b> 30,000+</b> <br>
+                <small>Users</small>
+              </p>
+          </div>
+            <div class="col-md-6 col-lg-2 text-center mx-auto">
+              <div class="img">
+                <img src="~assets/images/employers.png" alt="">
+              </div>
+              <p class="smartfont p-2 text-white">
+                <b> 9,000+</b> <br>
+                <small>Employers</small>
+              </p>
+          </div>
+            <div class="col-md-6 col-lg-2 text-center mx-auto">
+              <div class="img">
+                <img src="~assets/images/categories.png" alt="">
+              </div>
+              <p class="smartfont p-2 text-white">
+                 <br>
+                <small>Categories</small>
+              </p>
+          </div>
+            <div class="col-md-6 col-lg-2 text-center mx-auto">
+              <div class="img">
+                <img src="~assets/images/verifiedtasks.png" alt="">
+                <img src="~assets/images/badge.png" class="badgeImg" alt="">
+              </div>
+              <p class="smartfont p-2 text-white">
+                <b> 180,000+</b> <br>
+                <small>Verifed tasks</small>
+              </p>
+          </div>
+            <div class="col-md-6 col-lg-2 text-center mx-auto">
+              <div class="img">
+                <img src="~assets/images/paidout.png" alt="">
+              </div>
+              <p class="smartfont p-2 text-white">
+                <b> 746,200+</b> <br>
+                <small>Paid out</small>
+              </p>
+          </div>
+
           </div>
         </div>
      </div>
@@ -266,12 +315,17 @@
 
 <script>
 export default {
-auth:false,
+auth:"guest",
 }
 </script>
 <style >
 .searchbtn2{
  background: rgba(244, 120, 6, 0.08) !important;
 }
-
+.badgeImg{
+  position: absolute;
+  margin-top: 26px !important;;
+  margin-left: -22px !important;;
+  /* margin-bottom:40px ; */
+}
 </style>
