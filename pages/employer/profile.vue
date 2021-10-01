@@ -4,8 +4,9 @@
      
      <form action="">
         <header class="pl-3 pt-3 pb-0 pl-0">
+        
         <button class="btn mb-4 text-primary btn-white shadow-x rounded-x  bg-white">Update Profile</button>
- 
+  <nuxt-link to="/employer/dashboard" class="text-primary float-right text-underline"><i class="fa fa-home" aria-hidden="true"></i> </nuxt-link>
       </header>
       <!-- page1 -->
        <div class="page1"  v-if="page1 && !page2">
@@ -154,7 +155,7 @@ export default {
 
        this.page1==true;
        this.page2==false
-       
+
 
      }
      else if(data==1){
@@ -169,6 +170,9 @@ export default {
 </script>
 
 <style scoped>
+a:hover{color:var(--primary) !important;
+/* text-decoration: underline !important; */
+}
  
  
 </style>

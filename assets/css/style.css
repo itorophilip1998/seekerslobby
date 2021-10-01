@@ -26,10 +26,16 @@
 .rounded-x{
   border-radius: 10px;
 }
+.rounded-4{
+  border-radius: 4px;
+}
+.rounded-5{
+  border-radius: 5px;
+}
 .nav-link{
   width: 100px;
   color: black !important;
-  border-bottom:2px solid white !important;
+  border-bottom:2px solid transparent !important;
 
 }
 .nav-link:hover {
@@ -40,8 +46,14 @@
   border-bottom:2px solid #F47806 !important ;
   border-radius: 2px;
 }
-
-
+.avatar{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: whitesmoke;
+  display: inline;
+  box-shadow: 0 0 6px silver; 
+}
 /* index headers section*/
 #header-section{
   background-image:url(~assets/images/bg2.png)
@@ -278,10 +290,20 @@ background-repeat:no-repeat;
 .shadow-x{
   box-shadow: 0 0 10px rgb(214, 211, 211);
 }
+.bg-accent{
+  background: rgba(244, 120, 6, 0.08);
+}
+.text-accent{
+  color: rgba(244, 120, 6, 0.08);
+}
+.bg-accent2{
+  background: rgba(252, 202, 143, 0.6);
+}
+.text-accent2{
+  color: rgba(252, 202, 143, 0.6);
+}
 
-
-
-
+ 
 
 
 
@@ -323,6 +345,25 @@ background-repeat:no-repeat;
   /* width: 350px; */
   height: 100vh; 
   }
+  .maincol{
+    box-shadow: none;
+    }
+  .mainheader{
+    border: none !important;
+    }
+    main{
+      margin-top:70px !important;
+    }
+    .headrow{
+      position: absolute;
+      right:1% ;
+
+    }
+    .hcardT{ 
+        font-size: 0.85rem;
+    
+    }
+   
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -351,6 +392,8 @@ background-repeat:no-repeat;
 .authpage{ 
   height: 80vh; 
 }
+
+  
 }
 
 
@@ -367,6 +410,10 @@ background-repeat:no-repeat;
     font-size: 50px;
     line-height: 65px;
     }
+    body{
+      background:  #f5f3f3 !important;
+    }
+    
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */

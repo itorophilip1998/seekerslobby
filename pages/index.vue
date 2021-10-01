@@ -28,7 +28,7 @@
 
                   <!--two buttons -->
                   <div class="headerbtn col-md-8 p-0 text-center text-lg-left mx-auto mx-lg-0">
-                    <button class="btn text-primary border border-primary bg-white shadow mr-md-2 rounded-x">Hire a Freelancer</button>
+                    <button @click="$router.push('/employer/dashboard')" class="btn text-primary border border-primary bg-white shadow mr-md-2 rounded-x">Hire a Freelancer</button>
                     <button class="btn btn-primary shadow border border-primary rounded-x">Find a Job</button>
                   </div>
 

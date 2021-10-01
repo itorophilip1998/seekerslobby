@@ -3,7 +3,7 @@
     <header>
        <nav class="navbar  navbar-expand-lg navbar-light shadow-sm bg-white fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand font-weight-bold text-muted" href="#">SeekersLobby</a>
+        <a class="navbar-brand font-weight-bold text-muted" href="/">SeekersLobby</a>
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
             aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -14,8 +14,8 @@
               <nuxt-link class="nav-link" to="/">Home </nuxt-link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Post Jobs</a>
-            </li>
+              <nuxt-link class="nav-link" to="/employer/post-jobs">Post Jobs</nuxt-link>
+            </li> 
             <li class="nav-item">
               <a class="nav-link" href="#">Find Jobs</a>
             </li>

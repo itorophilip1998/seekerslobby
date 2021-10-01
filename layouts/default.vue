@@ -22,17 +22,10 @@ export default {
   methods: {
     callLinks()
     {
-      if(
-        this.$route.path=="/employer/profile"
-       || this.$route.path=="/signup" ||
-        this.$route.path=="/forgot-password"
-       || this.$route.path=="/signup" ||
-        this.$route.path=="/signin"
-       || this.$route.path=="/signup" ||
-        this.$route.path=="/terms"){
-         return false
+      if(  this.$route.path=="/" ){
+         return true
       }else{
-        return true
+        return false
       }
     }
   },
