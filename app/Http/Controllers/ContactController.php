@@ -26,27 +26,21 @@ class ContactController extends Controller
      */
     public function create(Request $request)
     {
-        // $paddymail = 'paddipay.app@gmail.com';
-        $request->validate([
-            'name' => 'string|min:1|max:70',
-            'email' => 'string|min:1|max:50',
+        $this->validate($request,[
+            'name' => 'string|min:1|max:70', 
+            'email' => 'string|min:1|max:50', 
+            'subject' => 'string|min:1|max:20', 
             'message' => 'string|min:1|max:300',
         ]);
 
         $data = new Contact();
         $data->name = $request->name;
         $data->email = $request->email;
-        $data->subject = "Contact Us";
+        $data->subject = $request->subject;
         $data->message = $request->message;
         $data->save();
-        try {
-            Mail::to($data->email)->send(new ContactMail($data));
-        } catch (\Throwable $th) {
-            //throw $th;
-        }
+        Mail::to('paddipay.app@gmail.com')->send(new ContactMail($data));
         return response()->json(['message'=>'Mail sent successfully!',$data ], 200);
-
-
     }
 
     /**
@@ -89,32 +83,9 @@ class ContactController extends Controller
      * @param  \App\Models\Contact  $contact
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Contact $contact)
     {
-        // $contact_reply = Contact::find($id);
-        // if($contact_reply){
-        //     $request->validate([
-        //         'name' => 'string|min:1|max:70',
-        //         'email' => 'string|min:1|max:50',
-        //         'message' => 'string|min:1|max:300',
-        //     ]);
-
-
-        //     $contact_reply->name = $request->name;
-        //     $contact_reply->email = $request->email;
-        //     $contact_reply->subject = "Reply Mail";
-        //     $contact_reply->message = $request->message;
-
-        //     try {
-        //         Mail::to($request->email)->send(new ContactMail(request()->all()));
-        //         $contact_reply->update();
-
-        //     } catch (\Throwable $th) {
-        //         //throw $th;
-        //     }
-
-        //     return response()->json(['message'=>'Mail sent successfully!',$contact_reply ], 200);
-
+        //
     }
 
     /**
@@ -123,7 +94,7 @@ class ContactController extends Controller
      * @param  \App\Models\Contact  $contact
      * @return \Illuminate\Http\Response
      */
-    public function destroy()
+    public function destroy(Contact $contact)
     {
         //
     }

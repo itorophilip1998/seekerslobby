@@ -3,15 +3,12 @@
 use GuzzleHttp\Client;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\JobController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\AdminController;
-use App\Http\Controllers\AccountController;
+use App\Http\Controllers\SkillsController;
 use App\Http\Controllers\ContactController;
-use App\Http\Controllers\DepositController;
-use App\Http\Controllers\PackageController;
-use App\Http\Controllers\TransferController;
-use App\Http\Controllers\WithdrawController;
-use App\Http\Controllers\InvestmentController;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\NewsletterController;
 use App\Http\Controllers\BillPaymentController;
 use App\Http\Controllers\flutterwaveController;
@@ -23,6 +20,7 @@ use App\Http\Controllers\RequestFundController;
 //newsletter
 Route::post('/subscribe-news', [NewsletterController::class, 'create']);
 Route::post('/contact-us', [ContactController::class, 'create']);
+Route::post('/verify-job/{id}', [AdminController::class, 'verifyJob']);
 
 // authentication
 Route::group(['middleware' => 'api','prefix' => 'auth'], function () {
@@ -39,34 +37,34 @@ Route::group(['middleware' => 'api','prefix' => 'auth'], function () {
     Route::post('/forgot-pin', [AuthController::class, 'forgotPin']);
     Route::post('/reset-password', [AuthController::class, 'resetPassword']);
     Route::post('/reset-pin', [AuthController::class, 'resetPin']);
-    Route::get('/me', [AuthController::class, 'me']);
-    Route::get('/user-account', [AuthController::class, 'userAccount']);
-    Route::post('/lock', [AuthController::class, 'updateLock']);
-    Route::get('/user-refs', [AuthController::class, 'referrals']);
-    Route::get('/today-refs', [AuthController::class, 'todayReferrals']);
-    Route::get('/my-refs', [AuthController::class, 'AllReferrals']);
+    Route::get('/user-profile', [AuthController::class, 'userProfile']);
 });
 
 
-//Accounts
+//Profile
 Route::group(['middleware' => 'api'], function () {
-    Route::post('/update-account', [AccountController::class, 'update']);
+    Route::post('/update-profile/{id}', [ProfileController::class, 'update']);
 });
 
-//Transfers
+//Job
 Route::group(['middleware' => 'api'], function () {
-    Route::post('/make-transfer', [TransferController::class, 'create']);
-    Route::get('/show-wallet/{wallet_id}', [TransferController::class, 'show']);
+    Route::post('/post-job', [JobController::class, 'create']);
 });
+
+//Skill
+Route::group(['middleware' => 'api'], function () {
+    Route::post('/add-skill', [SkillsController::class, 'create']);
+});
+
 
 
 //Investments
-Route::group(['middleware' => 'api'], function () {
-    Route::get('/investment-list', [InvestmentController::class, 'list']);
-    Route::post('/create-investment', [InvestmentController::class, 'create']);
-    Route::post('/update-investments', [InvestmentController::class, 'update']);
-    Route::get('/last-investment', [InvestmentController::class, 'lastInvestment']);
-});
+// Route::group(['middleware' => 'api'], function () {
+//     Route::get('/investment-list', [InvestmentController::class, 'list']);
+//     Route::post('/create-investment', [InvestmentController::class, 'create']);
+//     Route::post('/update-investments', [InvestmentController::class, 'update']);
+//     Route::get('/last-investment', [InvestmentController::class, 'lastInvestment']);
+// });
 
 //Deposit
 Route::group(['middleware' => 'api'], function () {

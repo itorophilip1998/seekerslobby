@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Job;
+use App\Models\Subscription;
 use Illuminate\Http\Request;
 
-class AdminController extends Controller
+class SubscriptionController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class AdminController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Models\Subscription  $subscription
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Subscription $subscription)
     {
         //
     }
@@ -52,10 +52,10 @@ class AdminController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \App\Models\Subscription  $subscription
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Subscription $subscription)
     {
         //
     }
@@ -64,10 +64,10 @@ class AdminController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\Models\Subscription  $subscription
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Subscription $subscription)
     {
         //
     }
@@ -75,28 +75,11 @@ class AdminController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\Models\Subscription  $subscription
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Subscription $subscription)
     {
         //
-    }
-
-    public function verifyJob(Request $request, $id){
-        $verify_job = Job::find($id);
-        $verify_job->update(['is_verified' => 1]);
-        if(!$verify_job){
-            return response()->json([
-                'status_code' => 422,
-                'message' => 'an error occured!'
-            ]);
-        } else {
-            return response()->json([
-                'status_code' => 200,
-                'message' => 'Job has been verified successfully!',
-                'verify_job' => $verify_job
-            ]); 
-        }
     }
 }

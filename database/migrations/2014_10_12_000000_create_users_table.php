@@ -19,12 +19,9 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->enum('role', ['user', 'admin'])->default('user');
-            $table->string('ref_code')->nullable();
-            $table->string('refered_by')->nullable();
+            $table->enum('role', ['job_seeker', 'employer', 'admin'])->nullable();
             $table->string('verification_code')->nullable();
             $table->boolean('oauth')->default(0);
-            $table->boolean('is_lock')->default(0);
             $table->boolean('is_ban')->default(0);
             $table->rememberToken();
             $table->timestamps();

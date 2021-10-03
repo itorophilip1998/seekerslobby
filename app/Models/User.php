@@ -2,16 +2,6 @@
 
 namespace App\Models;
 
-use App\Models\Account;
-use App\Models\Deposit;
-use App\Models\Package;
-use App\Models\Referral;
-use App\Models\Transfer;
-use App\Models\Withdraw;
-use App\Models\Investment;
-use App\Models\BillPayment;
-use App\Models\RequestFund;
-use App\Models\Transaction;
 use Tymon\JWTAuth\Contracts\JWTSubject;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -34,11 +24,8 @@ class User extends Authenticatable implements JWTSubject
         'email_verified_at',
         'password',
         'role',
-        'ref_code',
-        'refered_by',
         'verification_code',
         'oauth',
-        'is_lock', 
         'is_ban',
     ];
 
@@ -50,7 +37,6 @@ class User extends Authenticatable implements JWTSubject
     protected $hidden = [
         'password',
         'remember_token',
-        'verification_code'
     ];
 
     /**
@@ -81,71 +67,31 @@ class User extends Authenticatable implements JWTSubject
         return [];
     }
 
-
-
-    public function accounts(){
-        if($this->role = 'user'){
-            return $this->hasOne(Account::class);
-        }
+    public function profile(){
+        return $this->hasOne(Profile::class);
     }
 
-    public function transactions(){
-        if($this->role = 'user'){
-            return $this->hasMany(Transaction::class)->latest();
-        }
+    public function skills(){
+        return $this->hasMany(Skills::class);
     }
 
-    public function packages(){
-        if($this->role = 'user'){
-            return $this->hasMany(Package::class);
-        }
+    public function job(){
+        return $this->hasMany(Job::class);
     }
 
-    public function investments(){
-        if($this->role = 'user'){
-            return $this->hasMany(Investment::class)->latest();
-        }
+    public function jobApplication(){
+        return $this->hasMany(JobApplication::class);
     }
 
-    public function requestfunds(){
-        if($this->role = 'user'){
-            return $this->hasMany(RequestFund::class);
-        }
+    public function subscription(){
+        return $this->hasMany(Subscription::class);
     }
 
-    public function withdraws(){
-        if($this->role = 'user'){
-            return $this->hasMany(Transaction::class);
-        }
+    public function review(){
+        return $this->hasMany(Review::class);
     }
 
-    public function transfers(){
-        if($this->role = 'user'){
-            return $this->hasMany(Transfer::class);
-        }
-    }
-
-    public function deposits(){
-        if($this->role = 'user'){
-            return $this->hasMany(Deposit::class);
-        }
-    }
-
-    public function contacts(){
-        if($this->role = 'user'){
-            return $this->hasMany(Contact::class);
-        }
-    }
-
-    public function bill_payments(){
-        if($this->role = 'user'){
-            return $this->hasMany(BillPayment::class);
-        }
-    }
-
-    public function referrals(){
-        if($this->role = 'user'){
-            return $this->hasMany(Referral::class);
-        }
+    public function rating(){
+        return $this->hasMany(Rating::class);
     }
 }

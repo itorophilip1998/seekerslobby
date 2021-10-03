@@ -5,10 +5,8 @@ namespace App\Http\Controllers;
 use Throwable;
 use Carbon\Carbon;
 use App\Models\User;
-use App\Models\Account;
-use App\Models\Package;
+use App\Models\Profile;
 use App\Mail\VerifyMail;
-use App\Models\Referral;
 use App\Mail\PinResetMail;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
@@ -72,7 +70,7 @@ class AuthController extends Controller
         return $this->createNewToken($token);
     }
 
-    public function  resendLink(Request $request){
+    public function resendLink(Request $request){
         $request->validate([
             'email' => 'required|string|email'
         ]);
@@ -91,7 +89,7 @@ class AuthController extends Controller
        try {
             Mail::to($user->email)->send(new VerifyMail($user, $verification_code, $url, $email));
        } catch (\Throwable $th) {
-           //throw $th;
+           throw $th;
        }
 
         return response()->json([
@@ -113,7 +111,6 @@ class AuthController extends Controller
             'email' => 'required|string|email|max:100|unique:users',
             'password' => 'required|string|min:5|max:15',
             'role' => 'nullable|string|max:15',
-            'refered_by' => 'nullable|string|max:15',
             'verification_code' => 'nullable|string|max:15',
         ]);
 
@@ -124,25 +121,22 @@ class AuthController extends Controller
             'password' => Hash::make($request->password),
             'email'=> $request->email,
             'oauth'=> false,
-            'role'=> 'user',
+            'role'=> $request->role,
             'verification_code' => $verification_code,
-            'refered_by' => $request->referred_by,
             ]);
-        $ref_code = "R".$user->id.Str::random(8);
-        $user->update(['ref_code' => $ref_code]);
+
         $email = $user->email;
         $url = "/api/auth/verified/$email/$verification_code";
+
+        $user->profile()->create([
+            'user_id'=>$user->id,
+            ]);
+        
         try {
             Mail::to($user->email)->send(new VerifyMail($user, $verification_code, $url, $email));
         } catch (\Throwable $th) {
-            // throw $th;
+            throw $th;
         }
-
-        $user->accounts()->create([
-            'user_id'=>$user->id,
-            'account_type'=>'Individual',
-            'wallet_id'=>"W".$user->id.Time()
-            ]);
 
 
         return response()->json([
@@ -177,19 +171,19 @@ class AuthController extends Controller
      *
      * @return \Illuminate\Http\JsonResponse
      */
-    public function me() {
-        $user = User::where('id',auth()->user()->id)
-        ->with('accounts', 'investments', 'transactions')
-        ->first();
-        return response()->json($user,200);
-    }
+    // public function me() {
+    //     $user = User::where('id',auth()->user()->id)
+    //     ->with('accounts', 'investments', 'transactions')
+    //     ->first();
+    //     return response()->json($user,200);
+    // }
 
-    public function userAccount(){
-        $user_account = Account::where('user_id', Auth::user()->id)->get();
+    public function userProfile(){
+        $user_profile = Profile::where('user_id', Auth::user()->id)->get();
         return response()->json([
             'success'=> true,
-            'message'=> "User account found",
-            'user_account'=> $user_account,
+            'message'=> "User profile found",
+            'user_profile'=> $user_profile,
          ],200);
     }
 
@@ -206,7 +200,7 @@ class AuthController extends Controller
             'token_type' => 'bearer',
             // you dont fix maximium expired at here, it in config/auth.php
             'expires_in' => auth('api')->factory()->getTTL() * 60,
-            'user' => User::where('id',auth()->user()->id)->with('accounts')->first()
+            'user' => User::where('id',auth()->user()->id)->with('profile')->first()
         ],200);
     }
 
@@ -221,7 +215,7 @@ class AuthController extends Controller
     //    verify user now
        $verified_mail = Carbon::now();
        $user->update(['email_verified_at' => $verified_mail]);
-        
+
        return redirect($this->baseurl."/auth/signin?email=$email");
        }
 
