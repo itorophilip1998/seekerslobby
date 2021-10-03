@@ -18,13 +18,13 @@
                Post Jobs</nuxt-link>
             </li> 
             <li class="nav-item">
-              <nuxt-link class="nav-link" to="#">Available Jobs</nuxt-link>
+              <nuxt-link class="nav-link" to="/employer/jobs">Available Jobs</nuxt-link>
             </li>
             <li class="nav-item pr-2">
-              <a class="nav-link" href="#">Applications</a> 
+              <a class="nav-link" href="/employer/applications">Applications</a> 
             </li>
             <li class="nav-item pr-2">
-              <a class="nav-link" href="#">Chats</a> 
+              <a class="nav-link" href="/employer/chats">Chats</a> 
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0 pl-2 bg-transparent border-left border-secondary  ">
