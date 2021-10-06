@@ -138,7 +138,6 @@
 Kindly place a bid if you are interested slightly smiling face emoji.
                       <div class="time  small text-muted text-left">
                             3hours ago
-
                        </div>
                     </div>
 
@@ -159,8 +158,14 @@ Kindly place a bid if you are interested slightly smiling face emoji.
                   </div>
                </div>
                <div class="myinputbox col-md-5 col-lg-6 ">
-                 <input type="text" class="chatinput form-control" placeholder="Type here to start a chat....">
-                 <button class="senbtn btn rounded-5 btn-sm px-3"> Send </button>
+
+                 <input type="text" class="chatinput form-control" placeholder="Type here ....">
+                 <div class="icons">
+                      <img src="~assets/images/smile.png"  class="mr-lg-2 link"  alt="">
+                      <img src="~assets/images/attachment.png"  class="mr-lg-3 link"  alt="">
+                    <button class="senbtn btn rounded-5 btn-sm px-3"> Send </button>
+
+                 </div>
                </div>
         </div>
         <div class="col-md-3 rightwing ">
@@ -168,7 +173,7 @@ Kindly place a bid if you are interested slightly smiling face emoji.
                       <img src="~assets/images/avata.png"  class="avata2"  alt="">
             </div>
             <div class="info-container px-2">
-              <div class="info p-2 shadow-sm rounded-x mb-2">
+              <div class="info p-2 shadow-sm border rounded-x mb-2">
                 <div class="info-header  ">
                     <small>Full name</small>
                      <i class="fa fa-pencil float-right link text-primary" aria-hidden="true"></i>
@@ -177,7 +182,7 @@ Kindly place a bid if you are interested slightly smiling face emoji.
                      <h6 class=" m-0">mathew Balogun</h6>
                 </div>
               </div>
-              <div class="info p-2 shadow-sm rounded-x mb-2">
+              <div class="info p-2 border shadow-sm rounded-x mb-2">
                 <div class="info-header  ">
                     <small>Location</small>
                      <i class="fa fa-pencil float-right link text-primary" aria-hidden="true"></i>
@@ -186,7 +191,7 @@ Kindly place a bid if you are interested slightly smiling face emoji.
                      <h6 class="m-0 span">34 ajapa road, Apapa, Lagos, Nigeria</h6>
                 </div>
               </div>
-              <div class="info p-2 shadow-sm rounded-x mb-2">
+              <div class="info p-2 border shadow-sm rounded-x mb-2">
                 <div class="info-header  ">
                     <small>Location</small>
                      <i class="fa fa-pencil float-right link text-primary" aria-hidden="true"></i>
@@ -226,16 +231,30 @@ export default {
 }
 </script>
 
-<style >
-.senbtn{
-  position: absolute;
-  /* z-index: 3; */
-  background: rgba(252, 202, 143, 0.6);
+<style scoped >
+.leftwing{
+    border-right:2px solid rgb(214, 211, 211) !important;
+    padding:40px 2px  !important;
+  }
+  .rightwing{
+    border-left:2px solid rgb(214, 211, 211) !important;
+    padding:40px 2px  !important;
+  }
+  .centerwing{
+    /* border-left:1px solid rgb(214, 211, 211); */
+    padding:20px 2px !important ;
+  }
+.icons{
+    position: absolute;
   top:18px;
   right:20px;
+}
+.senbtn{
+  background: rgba(252, 202, 143, 0.6);
   font-size:14px;
   color:rgba(0, 0, 0, 0.719);
 }
+
 .chatinput{
   background: white;
 border: 0.5px solid rgb(214,211,211);
@@ -252,7 +271,7 @@ padding:10px;
   width:100%;
   z-index: 2;
    text-align:center;
-   /* border-right:1px solid rgb(214, 211, 211); */
+   border-right:2px solid rgb(214, 211, 211);
 }
 .chat-time{
   font-size:12px;
@@ -266,6 +285,8 @@ padding: 4px;
 font-size: 14px;
 margin-top:10px;
 box-sizing: border-box;
+border-top-left-radius: 0px;
+
 
 }
 .my-chat{
@@ -278,9 +299,12 @@ padding: 4px;
 font-size: 14px;
 margin-top:10px;
 box-sizing: border-box;
+border-top-right-radius: 0px;
+border: 0.5px solid rgb(238, 223, 223);
+
 
 }
- 
+
 .info-header {
   color:grey;
  font-size:13px;
@@ -368,6 +392,27 @@ background: #4CAF50;
     right: 2px;
     top: 23px;
 }
+@media only screen and (max-width: 600px) and (max-width: 768px)  {
+  .leftwing{
+    padding:0px 2px !important;
+    border:none !important;
+  }
+  .rightwing{
+    padding:0px 2px !important;
+    border:none !important;
+
+  }
+  .centerwing{
+    padding:20px 2px !important;
+  }
+
+  .fa-search{
+    top:10px !important;
+  }
+  .myinputbox{
+   border-right:0px solid rgb(214, 211, 211) !important;
+}
+  }
 
 
 

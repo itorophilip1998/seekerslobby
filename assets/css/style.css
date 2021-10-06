@@ -323,20 +323,8 @@ background-repeat:no-repeat;
 
 /* @media queries */
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) and (min-width:768px) {
-  .leftwing{
-    padding:20px 2px !important;
-  }
-  .rightwing{
-    padding:20px 2px !important;
-  }
-  .centerwing{
-    padding:20px 2px !important;
-  }
-
-  .fa-search{
-    top:10px !important;
-  }
+@media only screen and (max-width: 600px) and (max-width: 768px)  {
+  
   .boldtext{
     font-size:  35px !important;
     line-height: 31px !important;
@@ -422,18 +410,6 @@ background-repeat:no-repeat;
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .leftwing{
-    border-right:2px solid rgb(214, 211, 211) !important;
-    padding:40px 2px  !important;
-  }
-  .rightwing{
-    border-left:2px solid rgb(214, 211, 211) !important;
-    padding:40px 2px  !important;
-  }
-  .centerwing{
-    /* border-left:1px solid rgb(214, 211, 211); */
-    padding:20px 2px !important ;
-  }
 
   .pcleft,.pcleft2{
     visibility: visible !important;
