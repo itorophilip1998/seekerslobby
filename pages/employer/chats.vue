@@ -1,264 +1,208 @@
 <template>
   <div class="mainpage">
     <employerheader></employerheader>
-    <main class="px-md-4 px-0">
-      <div class="row m-0 ">
-        <!-- main col -->
-        <div class="col-md-8 p-0 ">
-          <div class="row m-0  p-0 ">
-            <div class="col-12 bg-white  m-0 p-0 maincol     shadow-x rounded-5  ">
-              <header class="border-bottom mainheader pt-2 px-3">
-            <h6 class="font-wieght-bold mb-0">Recent Job Posts
-              <span>
-            <nuxt-link to="/employer/jobs" class="text-primary float-right">View All <i class="fa fa-long-arrow-right" aria-hidden="true"></i></nuxt-link>
-              </span>
-            </h6>
-          </header>
-          <!-- recent jobssection  -->
-          <section class="p-2 p-md-3">
-              <div class="jobscard border rounded-x mt-3  shadow-x">
-                <div class="row m-0 p-0">
-                  <div class="col-lg-1 col-3 py-5 headcard text-center px-0">
-                    <div class="imghead p-3 bg-accent rounded-lg mt-3 rounded-x">
-                    <img src="~assets/images/project.png"  alt="">
-                    </div>
-                  </div>
-                  <div class="col-lg-11 col-9 p-1 text-justify">
-                    <div class="headercard ">
-                      <div class="headrow float-right px-2">
-                        <span class="badge badge-pill bg-accent2 pb-1 px-3 mr-2">pending</span>
-                        <img src="~assets/images/tooglebar.png" class="w-40 link" alt="">
-                      </div>
-                    <h6 class="pt-4 pt-md-2 hcardT  ">I need someone to design a car model in 3D</h6>
-                   </div>
-                   <div class="skills row m-0">
-                      <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">Blender</small>
-                      <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">Photoshop</small>
-                      <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">Illustrator</small>
-                      <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">CoralDraw</small> 
-                      <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">Figma</small> 
-                   </div>
-                   <div class="price verifiry p-2">
-                     <strong>$200 - $700</strong>
-                     <span class="badge badge-pill badge-success pb-1 ml-1">verified pay</span>
-                     <div class="small float-right text-muted">1 day ago</div>
-                   </div>
-                  </div>
-                </div>
-              </div>
-              <div class="jobscard border rounded-x mt-3 shadow-x">
-                <div class="row m-0 p-0">
-                  <div class="col-lg-1 col-3 py-5 headcard text-center px-0">
-                    <div class="imghead p-3 bg-accent rounded-lg mt-3 rounded-x">
-                    <img src="~assets/images/project.png"  alt="">
-                    </div>
-                  </div>
-                  <div class="col-lg-11 col-9 p-1 text-justify">
-                    <div class="headercard ">
-                      <div class="headrow float-right px-2">
-                        <span class="badge badge-pill bg-primary text-white pb-1 px-3 mr-2">allocated</span>
-                        <img src="~assets/images/tooglebar.png" class="w-40 link" alt="">
-                      </div>
-                    <h6 class="pt-4 pt-md-2 hcardT ">I need someone to design a car model in 3D</h6>
-                   </div>
-                   <div class="skills row m-0">
-                      <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">Blender</small>
-                      <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">Photoshop</small>
-                      <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">Illustrator</small>
-                      <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">CoralDraw</small> 
-                      <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">Figma</small> 
-                   </div>
-                   <div class="price verifiry p-2">
-                     <strong>$200 - $700</strong>
-                     <span class="badge badge-pill badge-success d-none pb-1 ml-1">verified pay</span>
-                   </div>
-                  </div>
-                </div>
-              </div>
-              <div class="jobscard border  shadow-x rounded-x mt-3">
-                <div class="row m-0 p-0">
-                  <div class="col-lg-1 col-3 py-5 headcard text-center px-0">
-                    <div class="imghead p-3 bg-accent rounded-lg mt-3 rounded-x">
-                    <img src="~assets/images/project.png"  alt="">
-                    </div>
-                  </div>
-                  <div class="col-lg-11 col-9 p-1 text-justify">
-                    <div class="headercard ">
-                      <div class="headrow float-right px-2">
-                        <span class="badge badge-pill bg-accent2 pb-1 px-3 mr-2">pending</span>
-                        <img src="~assets/images/tooglebar.png" class="w-40 link" alt="">
-                      </div>
-                    <h6 class="pt-4 pt-md-2 hcardT ">I need someone to design a car model in 3D</h6>
-                   </div>
-                   <div class="skills row m-0">
-                      <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">Blender</small>
-                      <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">Photoshop</small>
-                      <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">Illustrator</small>
-                      <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">CoralDraw</small> 
-                      <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">Figma</small> 
-                   </div>
-                   <div class="price verifiry p-2">
-                     <strong>$200 - $700</strong>
-                     <span class="badge badge-pill badge-success pb-1 ml-1">verified pay</span>
-                   </div>
-                  </div>
-                </div>
-              </div>
-               
-          </section>
+    <main class=" px-0 bg-white   p-0">
+      <div class="row m-0 fullscreen">
+        <div class="col-lg-3 col-md-4    leftwing ">
+            <div class="form-group px-4">
+              <input type="text"   class="form-control rounded-5 pl-4 " name="" id="" aria-describedby="helpId" placeholder="Search contact">
+              <i class="fa fa-search text-muted" aria-hidden="true"></i>
             </div>
-            <div class="col-12 bg-white  maincol mt-5 p-0   shadow-x rounded-5  ">
-              <header class="border-bottom mainheader pt-2 px-3">
-            <h6 class="font-wieght-bold mb-0">Recent Bids
-              <span>
-            <nuxt-link to="/employer/applications" class="text-primary float-right">View All <i class="fa fa-long-arrow-right" aria-hidden="true"></i></nuxt-link>
-              </span>
-            </h6>
-          </header>
-          <!-- recent bids  -->
-          <section class="p-2 p-md-3 pt-1 ">
-              <div class="jobscard border rounded-x mt-3  shadow-x">
-                <div class="row m-0 p-0">
-                  <div class="col-lg-1 col-3 py-5 headcard text-center px-0">
-                    <div class="imghead p-3  rounded-lg mt-3 rounded-x">
-                    <img src="~assets/images/profileavatar.png" class="border rounded-circle p-1"  alt="">
-                    </div>
-                  </div>
-                  <div class="col-lg-11 col-9 p-1 text-justify">
-                    <div class="headercard ">
-                      <div class="headrow float-right px-2">
-                        <small class="badge  pb-1 px-3 mr-2">
-                        <img src="~assets/images/time.png" class="w-40 link pr-1" alt="">
-                          4 days</small> 
-                        <small class="badge  pb-1 px-3 mr-2">
-                        <img src="~assets/images/bid.png" class="w-40 link pl-1" alt="">
-                          Bid $20</small> 
-                      </div>
-                    <h6 class="pt-4 pt-md-2 hcardT ">Annastesia Olajumoke</h6>
-                   </div>
-                   <div class="skills p col-md-8 mx-1 m-0 p-2 small bg-light ">
-                       Lorem imposum is a dummy text, this is a dummy text, but you already know that. This is also your best shot at finding your best job....
-                   </div> 
-                     <div class="small float-right text-muted pr-1">1 day ago</div>
 
-                  </div>
-                </div>
-              </div> 
-               
-              <div class="jobscard border rounded-x mt-3  shadow-x">
-                <div class="row m-0 p-0">
-                  <div class="col-lg-1 col-3 py-5 headcard text-center px-0">
-                    <div class="imghead p-3  rounded-lg mt-3 rounded-x">
-                    <img src="~assets/images/profileavatar.png" class="border rounded-circle p-1"  alt="">
-                    </div>
-                  </div>
-                  <div class="col-lg-11 col-9 p-1 text-justify">
-                    <div class="headercard ">
-                      <div class="headrow float-right px-2">
-                        <small class="badge  pb-1 px-3 mr-2">
-                        <img src="~assets/images/time.png" class="w-40 link pr-1" alt="">
-                          4 days</small> 
-                        <small class="badge  pb-1 px-3 mr-2">
-                        <img src="~assets/images/bid.png" class="w-40 link pl-1" alt="">
-                          Bid $20</small> 
-                      </div>
-                    <h6 class="pt-4 pt-md-2 hcardT ">Annastesia Olajumoke</h6>
-                   </div>
-                   <div class="skills p col-md-8 mx-1 m-0 p-2 small bg-light ">
-                       Lorem imposum is a dummy text, this is a dummy text, but you already know that. This is also your best shot at finding your best job....
-                   </div> 
-                     <div class="small float-right text-muted pr-1">1 day ago</div>
-
-                  </div>
-                </div>
-              </div> 
-               
-          </section>
-            </div>
-          </div>
-        </div>
-        <!-- other col -->
-        <div class="col-md-4 px-lg-5 py-3 py-md-1 order-md-last order-first px-md-4">
-          <div class="row m-0">
-            <div class="col-12 p-0">  <div class="cards shadow  bg-white">
-                <div class="header p-3 text-white bg-primary">
-                  <div class="sub-header">
-                      <span>welcome back</span>
-                  <span class="star float-right">
-                  <i class="fa fa-star" aria-hidden="true"></i> 
-                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                  </span>
-                  </div>
-                  <div class="sub-header2 mt-3">
-                  <strong>Felicity Okoronkwo</strong>
-                  <small class="sub-package float-right">
-                    Free Member
-                  </small>
-                </div>
-                  <div class="sub-header2 mt-1">
-                  <span>@onlineemployer</span>
-                  <button class="btn bg-transparent px-3 p-1 text-white border-white btn-sm skillsbtn font-weight-bold  float-right">
-                   Upgrade
-                  </button>
-                </div> 
-                </div>
-
-                <div class="main border-bottom bg-white py-4">
-                  <div class="bars p-3">
-                    <small>Set up your account </small>
-                    <small class="float-right">44%</small>
-                      <div class="progress bg-li" style="height:7px">
-                          <div class="progress-bar bg-primary" role="progressbar" style="width: 44%;"
-                              aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                      <div class="incomplet p-2">
-                        <div class="card-incomplete bg-light shadow-x p-1 row m-0">
-                          <div class="col-2"><i class="fa fa-address-card text-primary" aria-hidden="true"></i></div>
-                          <div class="col-8 incomTxt text-justify">Verify Your Country of Residence to Allow Freelancers Find You</div>
-                          <div class="col-2 incomTxt">+15</div>
+            <ul class="nav nav-pills mb-3 text-center border-bottom" id="pills-tab" role="tablist">
+            <li class="nav-item active mx-auto">
+              <a class="nav-link  p-0" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Active</a>
+            </li>
+            <li class="nav-item mx-auto">
+              <a class="nav-link p-0" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Unread(0)</a>
+            </li>
+            <li class="nav-item mx-auto">
+              <a class="nav-link p-0" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Archived</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+               <div class="chats p-0">
+                  <ul class="p-0">
+                    <li class="chat-head">
+                      <div class="avataC">
+                        <img src="~assets/images/avata.png" class="avataI"  alt="">
+                        <div class="online"></div>
                         </div>
-                        <hr> 
-                        <small class="font-weight-bold">Account balance</small>
-                       <small class="float-right text-muted">Top up your account</small>
-                       <div class="deposit bg-white my-1">
-                          <span class="text-muted ">$150.00 USD</span>
-                       <button class="btn btn-sm btn-primary float-right">Deposit funds</button>
-                       <hr class="mt-3 p-0">
-                       
-                       </div>
-                      </div>
-                  </div>
+                        <div class="chat-details">
+                          <h6 class="strong m-0">mathew Balogun</h6>
+                          <p class="small m-0">hello I got your a message....
+                          </p>
 
-                </div>
-                
-            </div></div>
-            <div class="col-12 p-0 mt-3">
-              <div class="plan bg-white mt-1 p-2 pb-0 shadow-x">
-                          <span class=" ">Your Credits</span>
-                       <small class="btn btn-sm btn-primary float-right">Free Plan</small>
-                       <hr class="mt-3 p-0">
-                       <span><strong>2 credits</strong> <span class="text-muted">left out of 5</span></span>
-                       <p class="p-0 text-muted small m-b0">
-                         You will not be able to post new jobs when you run out of credits
-                       </p>
+                        </div>
+                        <small class="chat-time">3 days ago</small>
+                         <div class="dropdown">
+              <button class="btn bg-transparent dropbtn fa fa-ellipsis-v" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false">
+                  </button>
+              <div class="dropdown-menu" aria-labelledby="triggerId">
+                <a class="dropdown-item" href="#">Mark as Read</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Archive</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Mute</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Block</a>
+              </div>
+            </div>
+                    </li>
+                    <li class="chat-head">
+                      <div class="avataC">
+                        <img src="~assets/images/avata.png" class="avataI"  alt="">
+                        <div class="online"></div>
+                        </div>
+                        <div class="chat-details">
+                          <h6 class="strong m-0">mathew Balogun</h6>
+                          <p class="small m-0">hello I got your a message....</p>
+                        </div>
+                        <small class="chat-time">3 days ago</small>
+                    </li>
+                    <li class="chat-head">
+                      <div class="avataC">
+                        <img src="~assets/images/avata.png" class="avataI"  alt="">
+                        <div class="online"></div>
+                        </div>
+                        <div class="chat-details">
+                          <h6 class="strong m-0">mathew Balogun</h6>
+                          <p class="small m-0">hello I got your a message....</p>
+                        </div>
+                        <small class="chat-time">3 days ago</small>
+                    </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+              <div class="chats p-0">
+                  <ul class="p-0">
+                    <li class="chat-head">
+                      <div class="avataC">
+                        <img src="~assets/images/avata.png" class="avataI"  alt="">
+                        <div class="online"></div>
+                        </div>
+                        <div class="chat-details">
+                          <h6 class="strong m-0">mathew Balogun</h6>
+                          <p class="small m-0">hello I got your a message...
+                          </p>
 
-                       </div>
-                       <button class="w-100 btn btn-sm btn-primary mt-0">Upgrade Your Plan to Recieve More Credits</button>
-        <div class="message-box  bg-primary text-white text-right p-2 mt-5">
-             <span class="float-left">Messages</span>           <img src="~assets/images/message.png" class=" link imgM mx-5" alt=""> <div class="ico"></div> <img src="~assets/images/minimize.png" class=" link ml-1 imgM" alt="">
-        </div>
+                        </div>
+                        <small class="chat-time">3 days ago</small>
+                    </li>
+
+                  </ul>
+               </div>
+            </div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+              <div class="chats p-0">
+                  <ul class="p-0">
+                    <li class="chat-head">
+                      <div class="avataC">
+                        <img src="~assets/images/avata.png" class="avataI"  alt="">
+                        <div class="online"></div>
+                        </div>
+                        <div class="chat-details">
+                          <h6 class="strong m-0">mathew Balogun</h6>
+                          <p class="small m-0">hello I got your a message....</p>
+                        </div>
+                        <small class="chat-time">3 days ago</small>
+                    </li>
+                  </ul>
+               </div>
             </div>
           </div>
+        </div>
+
+        <div class="col-md-5 col-lg-6 centerwing px-0">
+             <div class="chats p-0">
+                  <ul class="p-0">
+                    <li class="chat-head bg-light shadow-x ">
+                      <div class="avataC">
+                        <img src="~assets/images/avata.png" class="avataI"  alt="">
+                        <div class="online"></div>
+                        </div>
+                        <div class="chat-details">
+                          <h6 class="strong m-0">mathew Balogun</h6>
+                          <p class="small m-0">247 message(s)</p>
+                        </div>
+                    </li>
+
+                  </ul>
+                  <div class="chatboby ">
+                    <div class="friend-chat">
+                      Hi! This easy local job came in and they are looking for a freelancer to conduct a site visit and arrange a form in Owerri:
+                      https://www.freelance r.com/projects /photography/Site-Visit-Owerri-Nigeria/
+Kindly place a bid if you are interested slightly smiling face emoji.
+                      <div class="time  small text-muted text-left">
+                            3hours ago
+
+                       </div>
+                    </div>
+
+                    <div class="my-chat shadow-sm">
+                      Hi! This easy local job
+
+                      <div class="time  small text-muted text-right">
+                        1min ago
+                    </div>
+                    </div>
+                    <div class="my-chat shadow-sm">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam temporibus quidem fugit, distinctio dolorem rem quaerat laborum, ullam velit molestias corporis asperiores sapiente nihil nobis accusamus et? Dolorem, consequuntur esse?
+
+                      <div class="time  small text-muted text-right">
+                        1min ago
+                    </div>
+                    </div>
+                  </div>
+               </div>
+               <div class="myinputbox col-md-5 col-lg-6 ">
+                 <input type="text" class="chatinput form-control" placeholder="Type here to start a chat....">
+                 <button class="senbtn btn rounded-5 btn-sm px-3"> Send </button>
+               </div>
+        </div>
+        <div class="col-md-3 rightwing ">
+            <div class="header text-center mb-3">
+                      <img src="~assets/images/avata.png"  class="avata2"  alt="">
+            </div>
+            <div class="info-container px-2">
+              <div class="info p-2 shadow-sm rounded-x mb-2">
+                <div class="info-header  ">
+                    <small>Full name</small>
+                     <i class="fa fa-pencil float-right link text-primary" aria-hidden="true"></i>
+                </div>
+                <div class="info-body">
+                     <h6 class=" m-0">mathew Balogun</h6>
+                </div>
+              </div>
+              <div class="info p-2 shadow-sm rounded-x mb-2">
+                <div class="info-header  ">
+                    <small>Location</small>
+                     <i class="fa fa-pencil float-right link text-primary" aria-hidden="true"></i>
+                </div>
+                <div class="info-body">
+                     <h6 class="m-0 span">34 ajapa road, Apapa, Lagos, Nigeria</h6>
+                </div>
+              </div>
+              <div class="info p-2 shadow-sm rounded-x mb-2">
+                <div class="info-header  ">
+                    <small>Location</small>
+                     <i class="fa fa-pencil float-right link text-primary" aria-hidden="true"></i>
+                </div>
+                <div class="info-body">
+                     <h6 class="m-0 span">34 ajapa road, Apapa, Lagos, Nigeria</h6>
+                </div>
+              </div>
+            </div>
         </div>
       </div>
     </main>
   </div>
 </template>
 
-<script> 
+<script>
 import Password from 'vue-password-strength-meter';
 import employerheader from '@/components/employer-header.vue'
 export default {
@@ -272,17 +216,175 @@ export default {
       passwordCheckData:false,
       page1:true,
       page2:false
-       
+
     }
   },
-   
+
  methods: {
-   
+
  }
-} 
+}
 </script>
 
-<style scoped>
+<style >
+.senbtn{
+  position: absolute;
+  /* z-index: 3; */
+  background: rgba(252, 202, 143, 0.6);
+  top:18px;
+  right:20px;
+  font-size:14px;
+  color:rgba(0, 0, 0, 0.719);
+}
+.chatinput{
+  background: white;
+border: 0.5px solid rgb(214,211,211);
+border-radius: 5px;
+/* width:99%; */
+color:rgb(88, 86, 86) !important;
+padding:10px;
+}
+.myinputbox{
+  position:fixed;
+  bottom:0px;
+  padding:10px 5px ;
+  background: white;
+  width:100%;
+  z-index: 2;
+   text-align:center;
+   /* border-right:1px solid rgb(214, 211, 211); */
+}
+.chat-time{
+  font-size:12px;
+}
+.friend-chat{
+max-width: 80%;
+margin-left: 10px;
+background: #FCCA8F;
+border-radius: 10px;
+padding: 4px;
+font-size: 14px;
+margin-top:10px;
+box-sizing: border-box;
+
+}
+.my-chat{
+max-width: 80%;
+float:right;
+margin-right: 10px;
+background:rgba(252, 202, 143, 0.2);
+border-radius: 10px;
+padding: 4px;
+font-size: 14px;
+margin-top:10px;
+box-sizing: border-box;
+
+}
+ 
+.info-header {
+  color:grey;
+ font-size:13px;
+}
+.avata2{
+  width:100px;
+  height:100px;
+  border-radius: 50%;
+  border:5px solid whitesmoke;
+  box-shadow:0px 0px 5px silver;
+  background:white;
+}
+.fullscreen{
+   min-height:92vh;
+
+}
+.chat-time{
+  position: absolute;
+    right: 4px;
+    margin-top:3px;
+    font-size: 9px;
+    color:grey;
+}
+.online{
+  position: absolute;
+  width:8px;
+  height:8px;
+  border-radius: 50%;
+  left:38px;
+  top:35px;
+background: #4CAF50;
+}
+ .chat-details{
+  position: absolute;
+    left: 74px;
+    margin-top:8px;
+    /* background:whitesmoke; */
+}
+  .avataC{
+    position: absolute;
+    left: 15px;
+    margin-top:5px;
+    background:white;
+    padding:3px;
+    border-radius:50%;
+    /* box-shadow: 3px 4px 6px whitesmoke; */
+    border:1px solid rgb(233, 230, 230);
+  }
+  .avataI{
+    width:40px;
+    height:40px;
+  }
+.chat-head{
+  border-top:1px  solid rgb(233, 230, 230);
+  /* border-bottom:1px  solid rgb(233, 230, 230); */
+  height:60px;
+  cursor: pointer;
+  /* margin-top:3px; */
+}
+.chat-head:focus,.chat-head:hover{
+  background: rgba(252, 202, 143, 0.6);
+
+}
+.fa-search{
+  /* top: 5px; */
+   color: rgba(0, 0, 0, 0.4) !important;
+  top:50px;
+  left:34px;
+  position: absolute;
+}
+::placeholder,input{
+  color: rgba(0, 0, 0, 0.4) !important;
+}
+
+.nav-link {
+    width: 80px !important;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color:var(--primary) !important;
+    background-color: white !important;
+}
+.dropbtn{
+    position: absolute;
+    right: 2px;
+    top: 23px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .message-box{
   position: fixed ;
   bottom: 3px;
@@ -309,9 +411,8 @@ height:15px;
   font-size: 11px;
  }
  main{
-   margin-top:100px;
-   
-
+   margin-top:50px;
+   padding-top:20px;
  }
 .imghead{
   left: 10px;
@@ -331,9 +432,9 @@ box-shadow: 10px 10px 11px rgba(245, 245, 245, 0.959) !important;
 cursor: pointer;
   }
   .jobscard:hover{
-    background: #FFFFFFCC !important;  
+    background: #FFFFFFCC !important;
   }
-  .skillsbtn{ 
+  .skillsbtn{
    background: rgba(241, 241, 241, 1);
  font-size:9px !important;
  /* font-weight:bold */

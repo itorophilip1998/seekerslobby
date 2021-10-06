@@ -35,8 +35,8 @@
                       <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">Blender</small>
                       <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">Photoshop</small>
                       <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">Illustrator</small>
-                      <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">CoralDraw</small> 
-                      <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">Figma</small> 
+                      <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">CoralDraw</small>
+                      <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">Figma</small>
                    </div>
                    <div class="price verifiry p-2">
                      <strong>$200 - $700</strong>
@@ -65,8 +65,8 @@
                       <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">Blender</small>
                       <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">Photoshop</small>
                       <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">Illustrator</small>
-                      <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">CoralDraw</small> 
-                      <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">Figma</small> 
+                      <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">CoralDraw</small>
+                      <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">Figma</small>
                    </div>
                    <div class="price verifiry p-2">
                      <strong>$200 - $700</strong>
@@ -94,8 +94,8 @@
                       <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">Blender</small>
                       <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">Photoshop</small>
                       <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">Illustrator</small>
-                      <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">CoralDraw</small> 
-                      <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">Figma</small> 
+                      <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">CoralDraw</small>
+                      <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">Figma</small>
                    </div>
                    <div class="price verifiry p-2">
                      <strong>$200 - $700</strong>
@@ -104,7 +104,7 @@
                   </div>
                 </div>
               </div>
-               
+
           </section>
             </div>
             <div class="col-12 bg-white  maincol mt-5 p-0   shadow-x rounded-5  ">
@@ -129,22 +129,22 @@
                       <div class="headrow float-right px-2">
                         <small class="badge  pb-1 px-3 mr-2">
                         <img src="~assets/images/time.png" class="w-40 link pr-1" alt="">
-                          4 days</small> 
+                          4 days</small>
                         <small class="badge  pb-1 px-3 mr-2">
                         <img src="~assets/images/bid.png" class="w-40 link pl-1" alt="">
-                          Bid $20</small> 
+                          Bid $20</small>
                       </div>
                     <h6 class="pt-4 pt-md-2 hcardT ">Annastesia Olajumoke</h6>
                    </div>
                    <div class="skills p col-md-8 mx-1 m-0 p-2 small bg-light ">
                        Lorem imposum is a dummy text, this is a dummy text, but you already know that. This is also your best shot at finding your best job....
-                   </div> 
+                   </div>
                      <div class="small float-right text-muted pr-1">1 day ago</div>
 
                   </div>
                 </div>
-              </div> 
-               
+              </div>
+
               <div class="jobscard border rounded-x mt-3  shadow-x">
                 <div class="row m-0 p-0">
                   <div class="col-lg-1 col-3 py-5 headcard text-center px-0">
@@ -157,22 +157,22 @@
                       <div class="headrow float-right px-2">
                         <small class="badge  pb-1 px-3 mr-2">
                         <img src="~assets/images/time.png" class="w-40 link pr-1" alt="">
-                          4 days</small> 
+                          4 days</small>
                         <small class="badge  pb-1 px-3 mr-2">
                         <img src="~assets/images/bid.png" class="w-40 link pl-1" alt="">
-                          Bid $20</small> 
+                          Bid $20</small>
                       </div>
                     <h6 class="pt-4 pt-md-2 hcardT ">Annastesia Olajumoke</h6>
                    </div>
                    <div class="skills p col-md-8 mx-1 m-0 p-2 small bg-light ">
                        Lorem imposum is a dummy text, this is a dummy text, but you already know that. This is also your best shot at finding your best job....
-                   </div> 
+                   </div>
                      <div class="small float-right text-muted pr-1">1 day ago</div>
 
                   </div>
                 </div>
-              </div> 
-               
+              </div>
+
           </section>
             </div>
           </div>
@@ -185,7 +185,7 @@
                   <div class="sub-header">
                       <span>welcome back</span>
                   <span class="star float-right">
-                  <i class="fa fa-star" aria-hidden="true"></i> 
+                  <i class="fa fa-star" aria-hidden="true"></i>
                   <i class="fa fa-star-o" aria-hidden="true"></i>
                   <i class="fa fa-star-o" aria-hidden="true"></i>
                   <i class="fa fa-star-o" aria-hidden="true"></i>
@@ -203,7 +203,7 @@
                   <button class="btn bg-transparent px-3 p-1 text-white border-white btn-sm skillsbtn font-weight-bold  float-right">
                    Upgrade
                   </button>
-                </div> 
+                </div>
                 </div>
 
                 <div class="main border-bottom bg-white py-4">
@@ -220,20 +220,20 @@
                           <div class="col-8 incomTxt text-justify">Verify Your Country of Residence to Allow Freelancers Find You</div>
                           <div class="col-2 incomTxt">+15</div>
                         </div>
-                        <hr> 
+                        <hr>
                         <small class="font-weight-bold">Account balance</small>
                        <small class="float-right text-muted">Top up your account</small>
                        <div class="deposit bg-white my-1">
                           <span class="text-muted ">$150.00 USD</span>
                        <button class="btn btn-sm btn-primary float-right">Deposit funds</button>
                        <hr class="mt-3 p-0">
-                       
+
                        </div>
                       </div>
                   </div>
 
                 </div>
-                
+
             </div></div>
             <div class="col-12 p-0 mt-3">
               <div class="plan bg-white mt-1 p-2 pb-0 shadow-x">
@@ -248,7 +248,7 @@
                        </div>
                        <button class="w-100 btn btn-sm btn-primary mt-0">Upgrade Your Plan to Recieve More Credits</button>
         <div class="message-box  bg-primary text-white text-right p-2 mt-5">
-             <span class="float-left">Messages</span>           <img src="~assets/images/message.png" class=" link imgM mx-5" alt=""> <div class="ico"></div> <img src="~assets/images/minimize.png" class=" link ml-1 imgM" alt="">
+             <span class="float-left">Messages</span>       <nuxt-link to="/employer/chats"><img src="~assets/images/message.png" class=" link imgM mx-5" alt=""> </nuxt-link> <div class="ico"></div> <img src="~assets/images/minimize.png" class=" link ml-1 imgM" alt="">
         </div>
             </div>
           </div>
@@ -258,7 +258,7 @@
   </div>
 </template>
 
-<script> 
+<script>
 import Password from 'vue-password-strength-meter';
 import employerheader from '@/components/employer-header.vue'
 export default {
@@ -272,14 +272,14 @@ export default {
       passwordCheckData:false,
       page1:true,
       page2:false
-       
+
     }
   },
-   
+
  methods: {
-   
+
  }
-} 
+}
 </script>
 
 <style scoped>
@@ -310,7 +310,7 @@ height:15px;
  }
  main{
    margin-top:100px;
-   
+
 
  }
 .imghead{
@@ -331,9 +331,9 @@ box-shadow: 10px 10px 11px rgba(245, 245, 245, 0.959) !important;
 cursor: pointer;
   }
   .jobscard:hover{
-    background: #FFFFFFCC !important;  
+    background: #FFFFFFCC !important;
   }
-  .skillsbtn{ 
+  .skillsbtn{
    background: rgba(241, 241, 241, 1);
  font-size:9px !important;
  /* font-weight:bold */

@@ -1,15 +1,15 @@
 <template>
   <div>
     <header>
-       <nav class="navbar   navbar-expand-lg navbar-light shadow-sm nabBg fixed-top">
+       <nav class="navbar   navbar-expand-xl navbar-light shadow-sm nabBg fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand font-weight-bold text-muted" href="/">SeekersLobby</a>
-        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+        <button class="navbar-toggler d-xl-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
             aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="collapsibleNavId">
-          <ul class="navbar-nav mx-auto mt-2 mt-lg-0 text-left text-lg-center">
+          <ul class="navbar-nav mx-auto mt-2 mt-xl-0 text-left text-xl-center">
             <li class="nav-item">
               <nuxt-link class="nav-link " to="/employer/dashboard">Dashboard </nuxt-link>
             </li>
