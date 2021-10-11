@@ -33,6 +33,7 @@
     "bootstrap": "^4.6.0",
     "bootstrap-vue": "^2.21.2",
     "core-js": "^3.9.1",
+    "emoji-mart-vue": "^2.6.6",
     "jquery": "^3.6.0",
     "moment": "^2.29.1",
     "nuxt": "^2.15.3",

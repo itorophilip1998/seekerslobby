@@ -15,9 +15,9 @@
             </li>
             <li class="nav-item">
               <nuxt-link class="nav-link" to="/employer/post-jobs">Post Jobs</nuxt-link>
-            </li> 
+            </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Find Jobs</a>
+              <nuxt-link class="nav-link" to="/jobseeker/dashboard">Find Jobs</nuxt-link>
             </li>
             <li class="nav-item pr-2">
               <a class="nav-link" href="#">Contact</a>

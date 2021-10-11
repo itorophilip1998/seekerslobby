@@ -213,7 +213,7 @@ import employerheader from '@/components/employer-header.vue'
 export default {
   components:{
         Password,
-      employerheader
+        employerheader
     },
     auth:'guest',
   data() {
