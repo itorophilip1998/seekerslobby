@@ -300,6 +300,7 @@ background-repeat:no-repeat;
 .bg-accent2{
   background: rgba(252, 202, 143, 0.6);
 }
+
 .text-accent2{
   color: rgba(252, 202, 143, 0.6);
 }
@@ -311,7 +312,10 @@ background-repeat:no-repeat;
 
 
 
-
+button:focus, button:hover{
+  outline: none !important;
+  border: none !important;
+}
 
 
 
@@ -325,7 +329,7 @@ background-repeat:no-repeat;
 /* @media queries */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) and (max-width: 768px)  {
-  
+
   .boldtext{
     font-size:  35px !important;
     line-height: 31px !important;

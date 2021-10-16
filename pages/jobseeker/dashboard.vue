@@ -17,7 +17,9 @@
             <button class="btn-primary btn rounded-x p-2 searchbtn d-inline ">Search Jobs</button>
           </div>
     </div>
-
+  <div class="span" id="find-jobs"></div>
+  <div class="span" id="jobs"></div>
+  <div class="span" id="applications"></div>
       <div class="me p-2">
        <b> Hello Christabel</b>,<br>
         <small>Welcome to your dashboard. Check out what is happening</small>
@@ -32,6 +34,31 @@
 
           <!-- recent jobssection  -->
           <section class="p-1 p-md-3">
+            <div class="listme text-center text-md-left ">
+              <div class="text-left">
+                Filter by
+              </div>
+              <div class="form-check d-inline mr-2">
+                <small class="form-check-label">
+                  <input class="form-check-input link" name="jobs" id="" type="radio" value=""  >Saved Jobs
+                </small>
+              </div>
+              <div class="form-check d-inline mr-2">
+                <small class="form-check-label">
+                  <input class="form-check-input link" name="jobs" id="" type="radio" value=""  >Applied Jobs
+                </small>
+              </div>
+              <div class="form-group d-inline mr-1">
+                <select class="border" name="" id="">
+                  <option>1</option>
+                  <option>2</option>
+                  <option selected>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+                <small>Ratings</small>
+              </div>
+            </div>
               <div class="jobscard border rounded-x mt-3  shadow-x">
                 <div class="row m-0 p-0">
                   <div class="col-lg-1 col-3 py-5 headcard text-center px-0">
@@ -60,7 +87,19 @@
                      <strong>$200 - $700</strong>
                      <span class="badge badge-pill badge-success pb-1 ml-1">verified pay</span>
                       </div>
-
+                <div class="star">
+                  <div class="jobs-status">
+                    <i class="fa fa-check text-muted check-job text-primary p-0 m-0"></i>
+                    <i class="fa fa-check text-muted check-job2 text-primary p-0 m-0"></i>
+                  </div>
+                  <span class="star float-right">
+                  <i class="fa fa-star text-primary" aria-hidden="true"></i>
+                  <i class="fa fa-star-o" aria-hidden="true"></i>
+                  <i class="fa fa-star-o" aria-hidden="true"></i>
+                  <i class="fa fa-star-o" aria-hidden="true"></i>
+                  <i class="fa fa-star-o" aria-hidden="true"></i>
+                  </span>
+                   </div>
                   </div>
                     <div class="location col-12 py-2">
                      <small class="font-weight-bold">Lagos,Nigeria | Fulltime</small>
@@ -133,11 +172,11 @@
           </div>
         </div>
         <!-- other col profile -->
-        <div class="col-md-3 p-0 py-3 pt-4 pb-2 pt-md-5 mx-md-auto pl-md-2 py-md-1  ">
+        <div id="profile" class="col-md-3 p-0 py-3 pt-4 pb-2 pt-md-5 mx-md-auto pl-md-2 py-md-1  ">
             <div class="row m-0  p-0 ">
             <div class="col-12  m-0 p-0 maincol bg-white border-left border-bottom  border-right  rounded-x  ">
               <header class="border-bottom mainheader pt-2 m-0 px-3">
-            <h6 class="font-weight-bold mb-0 headtext ">Your Profile  
+            <h6 class="font-weight-bold mb-0 headtext ">Your Profile
   <small class="float-right text-primary "><strong>29%</strong></small>
 
             </h6>
@@ -146,7 +185,7 @@
 
         <div class="skills row m-0 p-2 border-bottom">
           <div class="col-12 pl-0">
-            <h6>Skills <small class="float-right fa fa-pencil text-primary link"></small></h6>
+            <h6>Skills  </h6>
           </div>
             <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">Blender</small>
             <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">Photoshop</small>
@@ -156,28 +195,28 @@
           </div>
         <div class="skills row m-0 p-2 border-bottom">
           <div class="col-12 pl-0">
-            <h6>Education <small class="float-right fa fa-pencil text-primary link"></small></h6>
+            <h6>Education  </h6>
           </div>
              <p>MSc, BSC, PGD</p>
           </div>
 
         <div class="skills row m-0 p-2 border-bottom">
           <div class="col-12 pl-0">
-            <h6>Work Experience <small class="float-right fa fa-pencil text-primary link"></small></h6>
+            <h6>Work Experience  </h6>
           </div>
              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, aliquam obcaecati eveniet natus explicabo officiis fugit impedit possimus perferendis.</p>
           </div>
 
         <div class="skills row m-0 p-2 border-bottom">
           <div class="col-12 pl-0">
-            <h6>Language Skills <small class="float-right fa fa-pencil text-primary link"></small></h6>
+            <h6>Language Skills  </h6>
           </div>
              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, aliquam obcaecati eveniet natus explicabo officiis fugit impedit possimus perferendis.</p>
           </div>
 
         <div class="skills row m-0 p-2 border-bottom">
           <div class="col-12 pl-0">
-            <h6>About you <small class="float-right fa fa-pencil text-primary link"></small></h6>
+            <h6>About you   </h6>
           </div>
              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, aliquam obcaecati eveniet natus explicabo officiis fugit impedit possimus perferendis.</p>
           </div>
@@ -191,7 +230,7 @@
 
           </div>
         </div>
-       
+
       </div>
     </main>
   </div>
@@ -222,6 +261,18 @@ export default {
 </script>
 
 <style scoped>
+.listme{
+  font-size: 14px;
+}
+.check-job{
+  font-size:16px
+}
+.check-job2{
+  font-size:16px;
+  position:absolute;
+  margin-top:11px !important;
+  margin-left:-13px !important;
+}
 .headtext{
   /* color:grey ; */
   padding-bottom:5px;
@@ -291,17 +342,17 @@ cursor: pointer;
  font-size:9px !important;
  /* font-weight:bold */
   }
-  .search{ 
+  .search{
    box-shadow:0px 0px 8px rgb(131, 96, 96) !important;
 }
 /* @media queries */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) and (max-width: 768px)  {
-  .searchboxs{ 
-  margin-top:6px !important; 
+  .searchboxs{
+  margin-top:6px !important;
   /* margin-top:16px !important;  */
 }
-  
+
 .searchbtn{
   display:none !important;
 }
