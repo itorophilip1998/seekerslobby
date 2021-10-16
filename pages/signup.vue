@@ -6,18 +6,20 @@
         <h6>Sign up</h6>
       </header>
       <main class="px-3 mt-5">
+        <form @submit.prevent="signupFunc()">
+
         <div class="google rounded-4 link border border-dark text-center  p-1">
           <img src="~assets/images/google.jpg" class="googlelogo" alt="">  Log in with Google
         </div>
         <div class=" google  text-center mt-3  p-1 row m-0">
             <div class="form-check form-check-inline col text-right p-0 m-0">
               <small class="form-check-label  p-0 m-0">
-                <input class="form-check-input link" type="radio" name="who" id="" value="">Jobseeker
+                <input class="form-check-input link"   type="radio" name="who" checked  @click="auth_details.role=='jobseeker'" >Jobseeker
               </small>
             </div>
             <div class="form-check form-check-inline col ">
               <small class="form-check-label">
-                <input class="form-check-input link" type="radio" name="who" id="" value="">Employer
+                <input class="form-check-input link"   type="radio" name="who" id="" @click="auth_details.role=='employer'">Employer
               </small>
             </div>
         </div>
@@ -28,51 +30,50 @@
             <div class="col-5"><hr></div>
           </div>
         </div>
-        <form action="">
           <div class="form-group">
-            <input type="email" v-model="auth_details.email" class="form-control rounded-4" name="" id="" aria-describedby="emailHelpId" placeholder="Email or Username">
+            <input type="email" required v-model="auth_details.email" class="form-control rounded-4" name="" id="" aria-describedby="emailHelpId" placeholder="Email or Username">
             <small id="emailHelpId" class="form-text d-none text-muted">Help text</small>
           </div>
           <div class="form-group">
-                <input type="password" v-model="auth_details.password"  class="form-control rounded-4" name="" ref="password" aria-describedby="emailHelpId" placeholder="Password">
+                <input required type="password" v-model="auth_details.password"  class="form-control rounded-4" name="" ref="password" aria-describedby="emailHelpId" placeholder="Password">
           <i class="link fa fa-eye" v-if="!passwordCheckData"  @click="passwordCheck('show')"></i>
           <i class="link fa fa-eye-slash"  v-if="passwordCheckData" @click="passwordCheck('open')"></i>
             <small id="emailHelpId" class="form-text d-none text-muted">Help text</small>
-          </div> 
+          </div>
             <div class="form-check px-2 pb-2 pl-4">
-               
+
                  <!-- terms  -->
                     <div class="modal fade pt-1" id="terms_" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
                       <terms></terms>
                     </div>
-            </div> 
+            </div>
             <div class="form-check px-2 pb-2 pl-4">
               <small class="form-check-label bgtxt mt-1 text-justify">
-                <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue"  >
-               I understand and agree with Jobber’s  
+                <input required type="checkbox" class="form-check-input" name="" id=""  >
+               I understand and agree with Jobber’s
                       <nuxt-link to="/terms" class="text-primary"> <u>Terms & Conditions</u> </nuxt-link>
                       and
                       <nuxt-link to="/terms" class="text-primary"> <u>Privacy Policy</u> </nuxt-link>
 
-              </small> 
+              </small>
                  <!-- terms  -->
                     <div class="modal fade pt-1" id="terms_" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
                       <terms></terms>
                     </div>
-            </div> 
+            </div>
           <div class="form-group  text-center ">
-            <button class="btn btn-primary text-white w-75 rounded-4">Join Seekerslobby</button>
+            <button class="btn btn-primary text-white w-75 rounded-4" type="submit">Join Seekerslobby</button>
           </div>
           <hr>
           <small class="d-block text-center">Already have an account? <nuxt-link to="/signin" class="text-primary">Sign In</nuxt-link></small>
         </form>
-      </main> 
+      </main>
     </div>
     <div  class="kisspng d-none d-lg-block" alt=""></div>
   </div>
 </template>
 
-<script> 
+<script>
 import Password from 'vue-password-strength-meter'
 import terms from '@/components/terms.vue'
 export default {
@@ -86,13 +87,17 @@ export default {
       passwordCheckData:false,
       auth_details:{
               password:"",
-              email:""
+              email:"",
+              role:""
 
       }
     }
   },
-   
+
  methods: {
+   signupFunc(){ 
+     this.$router.push(`/verify-email?email=${this.auth_details.email}`)
+   },
    passwordCheck(data){
              if (data=="show") {
                  this.passwordCheckData=!this.passwordCheckData;
@@ -104,7 +109,7 @@ export default {
              }
         }
  }
-} 
+}
 </script>
 
 <style scoped>

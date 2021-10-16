@@ -32,7 +32,7 @@
             <img src="~assets/images/avatar.png" class="w-100" alt="">
             </div>
             <small> Christabel Ikemefuna</small>
-            <nuxt-link to="/jobseeker/profile" class="update font-weight-bold text-primary"> Update Profi<u>le</u></nuxt-link>
+            <nuxt-link to="/jobseeker/profile?page=1" class="update font-weight-bold text-primary"> Update Profi<u>le</u></nuxt-link>
           </form>
         </div>
       </div>
@@ -46,7 +46,7 @@
    font-size: 20px;
  }
  .nabBg{
-   background: white;
+   background: #FCCA8F;
  }
   .nav-link{
   width: 150px;

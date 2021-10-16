@@ -6,7 +6,7 @@
         <header class="pl-3 pt-3 pb-0 px-2">
 
         <button class="btn mb-3 text-primary btn-white shadow-x rounded-x  bg-white">Update Profile</button>
-  <nuxt-link to="/employer/dashboard" class="text-primary float-right text-underline"><i class="fa fa-home" aria-hidden="true"></i> </nuxt-link>
+  <!-- <nuxt-link to="/jobseeker/dashboard" class="text-primary float-right text-underline"><i class="fa fa-home" aria-hidden="true"></i> </nuxt-link> -->
 
       <div class="multipages text-right  m-0 px-2">
          <small > {{page}} of 7 </small>
@@ -64,7 +64,7 @@
          </div>
 
          <div class="col-12 mt-3">
-        <button class="btn mb-4 text-primary btn-white shadow-x rounded-x bg-white">Skip</button>
+        <!-- <button class="btn mb-4 text-primary btn-white shadow-x rounded-x bg-white">Skip</button> -->
         <button type="button" @click="pageFunc(2)" class="btn mb-4 btn-primary  shadow rounded-x float-right bg-white">Next</button>
 
          </div>
@@ -149,7 +149,7 @@
             </div>
          </div>
          <div class="col-12 mt-3 ">
-        <button class="btn mb-4 text-primary btn-white shadow-x rounded-x bg-white">Skip</button>
+          <button class="btn mb-4 text-primary btn-white shadow-x rounded-x bg-white"  @click="pageFunc(1)">Back</button>
         <button type="button" @click="pageFunc(3)" class="btn mb-4 btn-primary  shadow rounded-x float-right bg-white">Next</button>
 
          </div>
@@ -173,7 +173,7 @@
 
 
       <div class="col-12 mt-4 ">
-     <button class="btn mb-4 text-primary btn-white shadow-x rounded-x bg-white">Skip</button>
+        <button class="btn mb-4 text-primary btn-white shadow-x rounded-x bg-white"  @click="pageFunc(2)">Back</button>
      <button type="button" @click="pageFunc(4)" class="btn mb-4 btn-primary  shadow rounded-x float-right bg-white">Next</button>
 
       </div>
@@ -197,7 +197,7 @@
 
 
       <div class="col-12 mt-4 ">
-     <button class="btn mb-4 text-primary btn-white shadow-x rounded-x bg-white">Skip</button>
+        <button class="btn mb-4 text-primary btn-white shadow-x rounded-x bg-white"  @click="pageFunc(3)">Back</button>
      <button type="button" @click="pageFunc(5)" class="btn mb-4 btn-primary  shadow rounded-x float-right bg-white">Next</button>
 
       </div>
@@ -226,7 +226,7 @@
      </div>
 
       <div class="col-12 mt-4 ">
-     <button class="btn mb-4 text-primary btn-white shadow-x rounded-x bg-white">Skip</button>
+        <button class="btn mb-4 text-primary btn-white shadow-x rounded-x bg-white"  @click="pageFunc(4)">Back</button>
      <button type="button" @click="pageFunc(6)" class="btn mb-4 btn-primary  shadow rounded-x float-right bg-white">Next</button>
 
       </div>
@@ -249,7 +249,7 @@
 
 
       <div class="col-12 mt-4 ">
-     <button class="btn mb-4 text-primary btn-white shadow-x rounded-x bg-white">Skip</button>
+     <button class="btn mb-4 text-primary btn-white shadow-x rounded-x bg-white"  @click="pageFunc(5)">Back</button>
      <button type="button" @click="pageFunc(7)" class="btn mb-4 btn-primary  shadow rounded-x float-right bg-white">Next</button>
 
       </div>
@@ -283,7 +283,7 @@
 
 
       <div class="col-12 mt-4 ">
-     <button class="btn mb-4 text-primary btn-white shadow-x rounded-x bg-white">Skip</button>
+        <button class="btn mb-4 text-primary btn-white shadow-x rounded-x bg-white"  @click="pageFunc(6)">Back</button>
      <button type="button" @click="pageFunc(5)" class="btn mb-4 btn-primary  shadow rounded-x float-right bg-white">Update</button>
 
       </div>

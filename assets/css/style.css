@@ -73,7 +73,8 @@ font-weight: normal
 .searchbtn{
  position: absolute;
   padding:7px 40px !important;
-  right:22px
+  right:22px;
+  /* margin-top: -7px !important; */
 }
 
 .pcleft,.pcleft2{

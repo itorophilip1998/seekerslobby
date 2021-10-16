@@ -46,7 +46,7 @@
    font-size: 20px;
  }
  .nabBg{
-   background: url(~assets/images/accentbg1.jpg);
+   background: #FCCA8F;
  }
   .nav-link{
   width: 150px; 

@@ -1,25 +1,41 @@
 <template>
   <div class="mainpage">
     <jobseekerheader></jobseekerheader>
+
     <main class="px-md-4 px-0">
+
       <div class="row m-0 ">
         <!-- main col -->
-        <div class="col-md-8 p-0 ">
+        <div class="col-md-7 p-0 ">
+          <div class="searchboxs bg-transparent  p-1  pl-md-1">
+      <!-- search box -->
+          <div class="search border-primary  border bg-white rounded-x p-2  pl-3">
+              <i class="fa fa-search text-primary" aria-hidden="true"></i>
+            <input type="text" class="searchbox p-2 border-0 " placeholder="Job Title or Keyword">
+          <i class="fa fa-map-marker text-primary" aria-hidden="true"></i>
+            <input type="text" class="searchbox p-2 border-0 " placeholder="Location">
+            <button class="btn-primary btn rounded-x p-2 searchbtn d-inline ">Search Jobs</button>
+          </div>
+    </div>
+
+      <div class="me p-2">
+       <b> Hello Christabel</b>,<br>
+        <small>Welcome to your dashboard. Check out what is happening</small>
+      </div>
           <div class="row m-0  p-0 ">
-            <div class="col-12 bg-white  m-0 p-0 maincol     shadow-x rounded-5  ">
-              <header class="border-bottom mainheader pt-2 px-3">
-            <h6 class="font-wieght-bold mb-0">Recent Job Posts
-              <span>
-            <nuxt-link to="/employer/jobs" class="text-primary float-right">View All <i class="fa fa-long-arrow-right" aria-hidden="true"></i></nuxt-link>
-              </span>
+            <div class="col-12  m-0 p-0 maincol bg-white border-left border-bottom  border-right    rounded-x  ">
+              <header class="border-bottom mainheader pt-2 m-0 px-3">
+            <h6 class="font-weight-bold mb-0 headtext ">Available Jobs
+  <small class="float-right text-primary "><strong>29 Saved job(s)</strong></small>
             </h6>
           </header>
+
           <!-- recent jobssection  -->
-          <section class="p-2 p-md-3">
+          <section class="p-1 p-md-3">
               <div class="jobscard border rounded-x mt-3  shadow-x">
                 <div class="row m-0 p-0">
                   <div class="col-lg-1 col-3 py-5 headcard text-center px-0">
-                    <div class="imghead p-3 bg-accent rounded-lg mt-3 rounded-x">
+                    <div class="imghead p-3 p-lg-2 bg-accent rounded-lg mt-3 rounded-x">
                     <img src="~assets/images/project.png"  alt="">
                     </div>
                   </div>
@@ -38,18 +54,24 @@
                       <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">CoralDraw</small>
                       <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">Figma</small>
                    </div>
+                      <i class="fa fa-heart  float-right p-2" style="color: #F47806;font-size:22px" aria-hidden="true"></i>
+
                    <div class="price verifiry p-2">
                      <strong>$200 - $700</strong>
                      <span class="badge badge-pill badge-success pb-1 ml-1">verified pay</span>
-                     <div class="small float-right text-muted">1 day ago</div>
-                   </div>
+                      </div>
+
                   </div>
+                    <div class="location col-12 py-2">
+                     <small class="font-weight-bold">Lagos,Nigeria | Fulltime</small>
+                     <small class="small float-right text-muted">1 day ago</small>
+                   </div>
                 </div>
               </div>
               <div class="jobscard border rounded-x mt-3 shadow-x">
                 <div class="row m-0 p-0">
                   <div class="col-lg-1 col-3 py-5 headcard text-center px-0">
-                    <div class="imghead p-3 bg-accent rounded-lg mt-3 rounded-x">
+                    <div class="imghead p-3 p-lg-2 bg-accent rounded-lg mt-3 rounded-x">
                     <img src="~assets/images/project.png"  alt="">
                     </div>
                   </div>
@@ -78,7 +100,7 @@
               <div class="jobscard border  shadow-x rounded-x mt-3">
                 <div class="row m-0 p-0">
                   <div class="col-lg-1 col-3 py-5 headcard text-center px-0">
-                    <div class="imghead p-3 bg-accent rounded-lg mt-3 rounded-x">
+                    <div class="imghead p-3 p-lg-2 bg-accent rounded-lg mt-3 rounded-x">
                     <img src="~assets/images/project.png"  alt="">
                     </div>
                   </div>
@@ -107,152 +129,69 @@
 
           </section>
             </div>
-            <div class="col-12 bg-white  maincol mt-5 p-0   shadow-x rounded-5  ">
-              <header class="border-bottom mainheader pt-2 px-3">
-            <h6 class="font-wieght-bold mb-0">Recent Bids
-              <span>
-            <nuxt-link to="/employer/applications" class="text-primary float-right">View All <i class="fa fa-long-arrow-right" aria-hidden="true"></i></nuxt-link>
-              </span>
+
+          </div>
+        </div>
+        <!-- other col profile -->
+        <div class="col-md-3 p-0 py-3 pt-4 pb-2 pt-md-5 mx-md-auto pl-md-2 py-md-1  ">
+            <div class="row m-0  p-0 ">
+            <div class="col-12  m-0 p-0 maincol bg-white border-left border-bottom  border-right  rounded-x  ">
+              <header class="border-bottom mainheader pt-2 m-0 px-3">
+            <h6 class="font-weight-bold mb-0 headtext ">Your Profile  
+  <small class="float-right text-primary "><strong>29%</strong></small>
+
             </h6>
           </header>
-          <!-- recent bids  -->
-          <section class="p-2 p-md-3 pt-1 ">
-              <div class="jobscard border rounded-x mt-3  shadow-x">
-                <div class="row m-0 p-0">
-                  <div class="col-lg-1 col-3 py-5 headcard text-center px-0">
-                    <div class="imghead p-3  rounded-lg mt-3 rounded-x">
-                    <img src="~assets/images/profileavatar.png" class="border rounded-circle p-1"  alt="">
-                    </div>
-                  </div>
-                  <div class="col-lg-11 col-9 p-1 text-justify">
-                    <div class="headercard ">
-                      <div class="headrow float-right px-2">
-                        <small class="badge  pb-1 px-3 mr-2">
-                        <img src="~assets/images/time.png" class="w-40 link pr-1" alt="">
-                          4 days</small>
-                        <small class="badge  pb-1 px-3 mr-2">
-                        <img src="~assets/images/bid.png" class="w-40 link pl-1" alt="">
-                          Bid $20</small>
-                      </div>
-                    <h6 class="pt-4 pt-md-2 hcardT ">Annastesia Olajumoke</h6>
-                   </div>
-                   <div class="skills p col-md-8 mx-1 m-0 p-2 small bg-light ">
-                       Lorem imposum is a dummy text, this is a dummy text, but you already know that. This is also your best shot at finding your best job....
-                   </div>
-                     <div class="small float-right text-muted pr-1">1 day ago</div>
+          <!-- profile  -->
 
-                  </div>
-                </div>
-              </div>
-
-              <div class="jobscard border rounded-x mt-3  shadow-x">
-                <div class="row m-0 p-0">
-                  <div class="col-lg-1 col-3 py-5 headcard text-center px-0">
-                    <div class="imghead p-3  rounded-lg mt-3 rounded-x">
-                    <img src="~assets/images/profileavatar.png" class="border rounded-circle p-1"  alt="">
-                    </div>
-                  </div>
-                  <div class="col-lg-11 col-9 p-1 text-justify">
-                    <div class="headercard ">
-                      <div class="headrow float-right px-2">
-                        <small class="badge  pb-1 px-3 mr-2">
-                        <img src="~assets/images/time.png" class="w-40 link pr-1" alt="">
-                          4 days</small>
-                        <small class="badge  pb-1 px-3 mr-2">
-                        <img src="~assets/images/bid.png" class="w-40 link pl-1" alt="">
-                          Bid $20</small>
-                      </div>
-                    <h6 class="pt-4 pt-md-2 hcardT ">Annastesia Olajumoke</h6>
-                   </div>
-                   <div class="skills p col-md-8 mx-1 m-0 p-2 small bg-light ">
-                       Lorem imposum is a dummy text, this is a dummy text, but you already know that. This is also your best shot at finding your best job....
-                   </div>
-                     <div class="small float-right text-muted pr-1">1 day ago</div>
-
-                  </div>
-                </div>
-              </div>
-
-          </section>
-            </div>
+        <div class="skills row m-0 p-2 border-bottom">
+          <div class="col-12 pl-0">
+            <h6>Skills <small class="float-right fa fa-pencil text-primary link"></small></h6>
           </div>
-        </div>
-        <!-- other col -->
-        <div class="col-md-4 px-lg-5 py-3 py-md-1 order-md-last order-first px-md-4">
-          <div class="row m-0">
-            <div class="col-12 p-0">  <div class="cards shadow  bg-white">
-                <div class="header p-3 text-white bg-primary">
-                  <div class="sub-header">
-                      <span>welcome back</span>
-                  <span class="star float-right">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                  </span>
-                  </div>
-                  <div class="sub-header2 mt-3">
-                  <strong>Felicity Okoronkwo</strong>
-                  <small class="sub-package float-right">
-                    Free Member
-                  </small>
-                </div>
-                  <div class="sub-header2 mt-1">
-                  <span>@onlineemployer</span>
-                  <button class="btn bg-transparent px-3 p-1 text-white border-white btn-sm skillsbtn font-weight-bold  float-right">
-                   Upgrade
-                  </button>
-                </div>
-                </div>
+            <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">Blender</small>
+            <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">Photoshop</small>
+            <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">Illustrator</small>
+            <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">CoralDraw</small>
+            <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">Figma</small>
+          </div>
+        <div class="skills row m-0 p-2 border-bottom">
+          <div class="col-12 pl-0">
+            <h6>Education <small class="float-right fa fa-pencil text-primary link"></small></h6>
+          </div>
+             <p>MSc, BSC, PGD</p>
+          </div>
 
-                <div class="main border-bottom bg-white py-4">
-                  <div class="bars p-3">
-                    <small>Set up your account </small>
-                    <small class="float-right">44%</small>
-                      <div class="progress bg-li" style="height:7px">
-                          <div class="progress-bar bg-primary" role="progressbar" style="width: 44%;"
-                              aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                      </div>
-                      <div class="incomplet p-2">
-                        <div class="card-incomplete bg-light shadow-x p-1 row m-0">
-                          <div class="col-2"><i class="fa fa-address-card text-primary" aria-hidden="true"></i></div>
-                          <div class="col-8 incomTxt text-justify">Verify Your Country of Residence to Allow Freelancers Find You</div>
-                          <div class="col-2 incomTxt">+15</div>
-                        </div>
-                        <hr>
-                        <small class="font-weight-bold">Account balance</small>
-                       <small class="float-right text-muted">Top up your account</small>
-                       <div class="deposit bg-white my-1">
-                          <span class="text-muted ">$150.00 USD</span>
-                       <button class="btn btn-sm btn-primary float-right">Deposit funds</button>
-                       <hr class="mt-3 p-0">
+        <div class="skills row m-0 p-2 border-bottom">
+          <div class="col-12 pl-0">
+            <h6>Work Experience <small class="float-right fa fa-pencil text-primary link"></small></h6>
+          </div>
+             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, aliquam obcaecati eveniet natus explicabo officiis fugit impedit possimus perferendis.</p>
+          </div>
 
-                       </div>
-                      </div>
-                  </div>
+        <div class="skills row m-0 p-2 border-bottom">
+          <div class="col-12 pl-0">
+            <h6>Language Skills <small class="float-right fa fa-pencil text-primary link"></small></h6>
+          </div>
+             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, aliquam obcaecati eveniet natus explicabo officiis fugit impedit possimus perferendis.</p>
+          </div>
 
-                </div>
+        <div class="skills row m-0 p-2 border-bottom">
+          <div class="col-12 pl-0">
+            <h6>About you <small class="float-right fa fa-pencil text-primary link"></small></h6>
+          </div>
+             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, aliquam obcaecati eveniet natus explicabo officiis fugit impedit possimus perferendis.</p>
+          </div>
 
-            </div></div>
-            <div class="col-12 p-0 mt-3">
-              <div class="plan bg-white mt-1 p-2 pb-0 shadow-x">
-                          <span class=" ">Your Credits</span>
-                       <small class="btn btn-sm btn-primary float-right">Free Plan</small>
-                       <hr class="mt-3 p-0">
-                       <span><strong>2 credits</strong> <span class="text-muted">left out of 5</span></span>
-                       <p class="p-0 text-muted small m-b0">
-                         You will not be able to post new jobs when you run out of credits
-                       </p>
 
-                       </div>
-                       <button class="w-100 btn btn-sm btn-primary mt-0">Upgrade Your Plan to Recieve More Credits</button>
-        <div class="message-box  bg-primary text-white text-right p-2 mt-5">
+ <div class="message-box  bg-primary text-white text-right p-2 mt-5">
              <span class="float-left">Messages</span>       <nuxt-link to="/employer/chats"><img src="~assets/images/message.png" class=" link imgM mx-5" alt=""> </nuxt-link> <div class="ico"></div> <img src="~assets/images/minimize.png" class=" link ml-1 imgM" alt="">
         </div>
+
             </div>
+
           </div>
         </div>
+       
       </div>
     </main>
   </div>
@@ -283,6 +222,20 @@ export default {
 </script>
 
 <style scoped>
+.headtext{
+  /* color:grey ; */
+  padding-bottom:5px;
+  font-size:14px;
+}
+.mainheader{
+  background: #FCCA8F;
+border-radius: 10px 10px 0px 0px;
+}
+.searchboxs{
+  background: #FCCA8F;
+  margin-top:50px;
+  padding-top:30px;
+}
 .message-box{
   position: fixed ;
   bottom: 3px;
@@ -309,7 +262,7 @@ height:15px;
   font-size: 11px;
  }
  main{
-   margin-top:100px;
+   margin-top:30px;
 
 
  }
@@ -331,11 +284,26 @@ box-shadow: 10px 10px 11px rgba(245, 245, 245, 0.959) !important;
 cursor: pointer;
   }
   .jobscard:hover{
-    background: #FFFFFFCC !important;
+    background: #F1EEEECC !important;
   }
   .skillsbtn{
    background: rgba(241, 241, 241, 1);
  font-size:9px !important;
  /* font-weight:bold */
+  }
+  .search{ 
+   box-shadow:0px 0px 8px rgb(131, 96, 96) !important;
+}
+/* @media queries */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) and (max-width: 768px)  {
+  .searchboxs{ 
+  margin-top:6px !important; 
+  /* margin-top:16px !important;  */
+}
+  
+.searchbtn{
+  display:none !important;
+}
   }
 </style>
