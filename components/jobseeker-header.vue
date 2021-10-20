@@ -4,11 +4,11 @@
        <nav class="navbar   navbar-expand-xl navbar-light shadow-sm nabBg fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand font-weight-bold text-muted" href="/">SeekersLobby</a>
-        <button v-if="is_bar ==false" @click="is_bar =true" class="navbar-toggler d-xl-none border-0 text-dark" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+        <button v-if="is_bar ==true" @click="is_bar =false" class="navbar-toggler d-xl-none border-0 text-dark" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
             aria-expanded="false" aria-label="Toggle navigation">
           <span class="fa fa-bars"></span>
         </button>
-        <button v-if="is_bar ==true" @click="is_bar =false" class="navbar-toggler d-xl-none border-0 text-dark"  type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+        <button v-if="is_bar ==false" @click="is_bar =true" class="navbar-toggler d-xl-none border-0 text-dark"  type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
             aria-expanded="false" aria-label="Toggle navigation">
           <span class="fa fa-close"></span>
 
@@ -19,24 +19,34 @@
               <nuxt-link class="nav-link " to="/jobseeker/dashboard">Dashboard </nuxt-link>
             </li>
             <li class="nav-item ">
-              <nuxt-link class="nav-link  " to="/jobseeker/dashboard/find-jobs">
+              <nuxt-link class="nav-link  " to="/jobseeker/dashboard#find-jobs">
                Find Jobs</nuxt-link>
             </li>
             <li class="nav-item">
-              <nuxt-link class="nav-link" to="/jobseeker/dashboard/jobs">Available Jobs</nuxt-link>
+              <nuxt-link class="nav-link" to="/jobseeker/dashboard#jobs">Available Jobs</nuxt-link>
             </li>
             <li class="nav-item pr-2">
-              <a class="nav-link" href="/jobseeker/dashboard/applications">Applications</a>
+              <nuxt-link class="nav-link" to="/jobseeker/dashboard#applications">Applications</nuxt-link>
             </li>
             <li class="nav-item pr-2">
-              <a class="nav-link" href="/jobseeker/chats">Chats</a>
+              <nuxt-link class="nav-link" to="/jobseeker/chats">Chats</nuxt-link>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0 pl-2 bg-transparent border-left border-secondary  ">
             <div class="avatar mr-1 mt-2 link">
-            <img src="~assets/images/avatar.png"  @click="moveMe()" class="w-100" alt="">
+            <a  href='/jobseeker/dashboard#profile' class="d-none d-md-block">
+               <img src="~assets/images/avatar.png"   class="w-100" alt="">
+            </a>
+            <nuxt-link  to='/jobseeker/profiles/itoro' class="d-md-none ">
+               <img src="~assets/images/avatar.png"   class="w-100" alt="">
+            </nuxt-link>
             </div>
-            <small class="link" @click="moveMe()"> Christabel Ikemefuna</small>
+            <a  href='/jobseeker/dashboard#profile' class="d-none d-md-block">
+                 <small class="link text-dark" > Christabel Ikemefuna</small>
+            </a>
+            <nuxt-link  to='/jobseeker/profiles/itoro' class="d-md-none ">
+                  <small class="link text-dark" > Christabel Ikemefuna</small>
+            </nuxt-link>
             <nuxt-link to="/jobseeker/profile?page=1" class="update font-weight-bold text-primary"> Update Profi<u>le</u></nuxt-link>
           </form>
         </div>

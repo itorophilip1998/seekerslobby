@@ -317,10 +317,26 @@ button:focus, button:hover{
   border: none !important;
 }
 
+.vue-notification {
+  font-size: 12px;
+  padding: 10px;
+  margin: 5px 5px 5px !important;
+  color: #fff;
 
+  border-radius:7px !important;
+  box-shadow:0 0 10px silver !important;
 
+}
+.vue-notification.primary {
+  background: var(--secondary) !important;
+  border-left: 5px solid  var(--secondary) !important;
+}
+.vue-notification.error {
+  background: var(--danger) !important;
+  border-left: 5px solid  var(--danger) !important;
+}
 
-
+ 
 
 
 

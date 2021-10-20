@@ -22,6 +22,7 @@
   <div class="span" id="applications"></div>
       <div class="me p-2">
        <b> Hello Christabel</b>,<br>
+
         <small>Welcome to your dashboard. Check out what is happening</small>
       </div>
           <div class="row m-0  p-0 ">
@@ -65,14 +66,48 @@
                     <div class="imghead p-3 p-lg-2 bg-accent rounded-lg mt-3 rounded-x">
                     <img src="~assets/images/project.png"  alt="">
                     </div>
+                  <div class="jobs-status mt-4 text-center">
+                  <i class="fa fa-check-circle-o text-primary" aria-hidden="true"></i>
+                  </div>
                   </div>
                   <div class="col-lg-11 col-9 p-1 text-justify">
                     <div class="headercard ">
-                      <div class="headrow float-right px-2">
-                        <span class="badge badge-pill bg-accent2 pb-1 px-3 mr-2">pending</span>
-                        <img src="~assets/images/tooglebar.png" class="w-40 link" alt="">
+                      <div class="dropdown open">
+                        <button class=" bg-white btn btn-sm  float-right" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                             <span class="badge  badge-pill bg-accent2 pb-1 px-3 mr-4">pending</span>
+                             <img src="~assets/images/tooglebar.png" class="w-40 link" alt="">
+                            </button>
+
+
+                        <div class="dropdown-menu shadow" aria-labelledby="triggerId">
+                          <a class="dropdown-item" href="#">Apply Job <i class="fa fa-handshake-o" aria-hidden="true"></i></a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Rate Job  <i class="fa fa-star-o" aria-hidden="true"></i></a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" v-if="is_saved"  @click="saveJobFunc()" href="#">Remove Job <i class="fa fa-heart text-primary" aria-hidden="true"></i></a>
+                          <a class="dropdown-item" v-if="!is_saved"  @click="saveJobFunc()" href="#">Save Job <i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#viewjobs">View Job <i class="fa fa-eye" aria-hidden="true"></i></a>
+                        </div>
                       </div>
-                    <h6 class="pt-4 pt-md-2 hcardT  ">I need someone to design a car model in 3D</h6>
+                    <h6 class="pt-4 pt-md-2 hcardT  " data-toggle="modal" data-target="#viewjobs">I need someone to design a car model in 3D</h6>
+                   </div>
+                   <div class="viewjobs">
+                        <!-- Modal -->
+                        <div class="modal fade" id="viewjobs" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                          <div class="modal-dialog" role="document">
+                            <div class="modal-content"> 
+                              <div class="modal-body">
+                                Body
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary rounded-x btn-sm shadow" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary rounded-x btn-sm shadow">Apply Job</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                    </div>
                    <div class="skills row m-0">
                       <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">Blender</small>
@@ -81,17 +116,15 @@
                       <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">CoralDraw</small>
                       <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">Figma</small>
                    </div>
-                      <i class="fa fa-heart  float-right p-2" style="color: #F47806;font-size:22px" aria-hidden="true"></i>
+                      <i  v-if="is_saved"  @click="saveJobFunc()" class="fa fa-heart   link float-right p-2" style="color: #F47806;font-size:22px" aria-hidden="true"></i>
+                      <i v-if="!is_saved" @click="saveJobFunc()"  class="fa fa-heart-o link   float-right p-2" style="color: #F47806;font-size:22px" aria-hidden="true"></i>
 
                    <div class="price verifiry p-2">
                      <strong>$200 - $700</strong>
                      <span class="badge badge-pill badge-success pb-1 ml-1">verified pay</span>
                       </div>
                 <div class="star">
-                  <div class="jobs-status">
-                    <i class="fa fa-check text-muted check-job text-primary p-0 m-0"></i>
-                    <i class="fa fa-check text-muted check-job2 text-primary p-0 m-0"></i>
-                  </div>
+
                   <span class="star float-right">
                   <i class="fa fa-star text-primary" aria-hidden="true"></i>
                   <i class="fa fa-star-o" aria-hidden="true"></i>
@@ -102,6 +135,7 @@
                    </div>
                   </div>
                     <div class="location col-12 py-2">
+                      <i class="fa fa-map-marker" aria-hidden="true"></i>
                      <small class="font-weight-bold">Lagos,Nigeria | Fulltime</small>
                      <small class="small float-right text-muted">1 day ago</small>
                    </div>
@@ -172,95 +206,65 @@
           </div>
         </div>
         <!-- other col profile -->
-        <div id="profile" class="col-md-3 p-0 py-3 pt-4 pb-2 pt-md-5 mx-md-auto pl-md-2 py-md-1  ">
-            <div class="row m-0  p-0 ">
-            <div class="col-12  m-0 p-0 maincol bg-white border-left border-bottom  border-right  rounded-x  ">
-              <header class="border-bottom mainheader pt-2 m-0 px-3">
-            <h6 class="font-weight-bold mb-0 headtext ">Your Profile
-  <small class="float-right text-primary "><strong>29%</strong></small>
-
-            </h6>
-          </header>
-          <!-- profile  -->
-
-        <div class="skills row m-0 p-2 border-bottom">
-          <div class="col-12 pl-0">
-            <h6>Skills  </h6>
-          </div>
-            <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">Blender</small>
-            <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">Photoshop</small>
-            <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">Illustrator</small>
-            <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">CoralDraw</small>
-            <small class="btn skillsbtn rounded-5 btn-sm mx-1 mt-1">Figma</small>
-          </div>
-        <div class="skills row m-0 p-2 border-bottom">
-          <div class="col-12 pl-0">
-            <h6>Education  </h6>
-          </div>
-             <p>MSc, BSC, PGD</p>
-          </div>
-
-        <div class="skills row m-0 p-2 border-bottom">
-          <div class="col-12 pl-0">
-            <h6>Work Experience  </h6>
-          </div>
-             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, aliquam obcaecati eveniet natus explicabo officiis fugit impedit possimus perferendis.</p>
-          </div>
-
-        <div class="skills row m-0 p-2 border-bottom">
-          <div class="col-12 pl-0">
-            <h6>Language Skills  </h6>
-          </div>
-             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, aliquam obcaecati eveniet natus explicabo officiis fugit impedit possimus perferendis.</p>
-          </div>
-
-        <div class="skills row m-0 p-2 border-bottom">
-          <div class="col-12 pl-0">
-            <h6>About you   </h6>
-          </div>
-             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, aliquam obcaecati eveniet natus explicabo officiis fugit impedit possimus perferendis.</p>
-          </div>
-
-
- <div class="message-box  bg-primary text-white text-right p-2 mt-5">
-             <span class="float-left">Messages</span>       <nuxt-link to="/employer/chats"><img src="~assets/images/message.png" class=" link imgM mx-5" alt=""> </nuxt-link> <div class="ico"></div> <img src="~assets/images/minimize.png" class=" link ml-1 imgM" alt="">
-        </div>
-
-            </div>
-
-          </div>
+        <div id="profile" class="d-none d-md-block col-md-3 p-0 py-3 pt-4 pb-2 pt-md-5 mx-md-auto pl-md-2 py-md-1  ">
+          <profile></profile>
         </div>
 
       </div>
     </main>
+     <notifications group="foo"   />
+
   </div>
 </template>
 
 <script>
 import Password from 'vue-password-strength-meter';
+import profile from './profiles/_user';
 import jobseekerheader from '@/components/jobseeker-header.vue'
 export default {
   components:{
         Password,
-      jobseekerheader
+      jobseekerheader,
+      profile
     },
     auth:'guest',
   data() {
     return {
       passwordCheckData:false,
       page1:true,
-      page2:false
+      page2:false,
+      is_saved:false,
 
     }
   },
 
  methods: {
-
+ message(position,type,title,text,time){
+     this.$notify({
+          position:(position) ? position :"top pright",
+          group: 'foo',
+          type: (type) ? type : "primary",
+          title: (title) ? title : "New Message ",
+          text: (text) ? text : "done!",
+          duration: (time) ? time : 500,
+      });
+  },
+  saveJobFunc(){
+      this.is_saved=!this.is_saved
+     this.message(null,"primary",null,(this.is_saved) ? "Saved!" : "Removed!",null);
+  }
  }
 }
 </script>
 
 <style scoped>
+.star{
+  font-size:12px;
+}
+.hcardT:hover{
+  cursor:pointer;
+  text-decoration: underline;
+}
 .listme{
   font-size: 14px;
 }
@@ -335,7 +339,7 @@ box-shadow: 10px 10px 11px rgba(245, 245, 245, 0.959) !important;
 cursor: pointer;
   }
   .jobscard:hover{
-    background: #F1EEEECC !important;
+    /* background: #F1EEEECC !important; */
   }
   .skillsbtn{
    background: rgba(241, 241, 241, 1);

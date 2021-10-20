@@ -29,7 +29,7 @@
                   <!--two buttons -->
                   <div class="headerbtn col-md-8 p-0 text-center text-lg-left mx-auto mx-lg-0">
                     <button @click="$router.push('/employer/dashboard')" class="btn text-primary border border-primary bg-white shadow mr-md-2 rounded-x">Hire a Freelancer</button>
-                    <button class="btn btn-primary shadow border border-primary rounded-x">Find a Job</button>
+                    <button @click="$router.push('/jobseeker/dashboard')" class="btn btn-primary shadow border border-primary rounded-x">Find a Job</button>
                   </div>
 
 
@@ -77,7 +77,7 @@
                   <input type="text" class="searchbox p-2 border-0 " placeholder="Job Title or Keyword">
                 <i class="fa fa-map-marker text-primary" aria-hidden="true"></i>
                   <input type="text" class="searchbox p-2 border-0 " placeholder="Location">
-                 <button class="text-primary border border-primary btn rounded-x p-2 searchbtn searchbtn2">Find a freelancer</button>
+                 <button @click="$router.push('/employer/dashboard')" class="text-primary border border-primary btn rounded-x p-2 searchbtn searchbtn2">Find a freelancer</button>
                 </div>
             </div>
        </div>
@@ -116,7 +116,7 @@
                     <h1 class="do p-0 p-md-4">
                       Do You Need Something  Done Right?
                       <br>
-                 <button class="btn-primary mt-4 btn rounded-x p-2 px-5">Hire a freelancer</button>
+                 <button class="btn-primary mt-4 btn rounded-x p-2 px-5" @click="$router.push('/employer/dashboard')">Hire a freelancer</button>
                     </h1>
 
                   </div>
