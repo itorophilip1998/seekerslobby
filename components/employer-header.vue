@@ -1,7 +1,7 @@
 <template>
   <div>
     <header>
-       <nav class="navbar   navbar-expand-xl navbar-light shadow-sm nabBg fixed-top">
+       <nav  class="navbar   navbar-expand-xl navbar-light shadow-sm nabBg fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand font-weight-bold text-muted" href="/">SeekersLobby</a>
         <button class="navbar-toggler d-xl-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
@@ -13,18 +13,18 @@
             <li class="nav-item">
               <nuxt-link class="nav-link " to="/employer/dashboard">Dashboard </nuxt-link>
             </li>
-            <li class="nav-item "> 
-              <nuxt-link class="nav-link  " to="/employer/post-jobs"> 
+            <li class="nav-item ">
+              <nuxt-link class="nav-link  " to="/employer/post-jobs">
                Post Jobs</nuxt-link>
-            </li> 
+            </li>
             <li class="nav-item">
               <nuxt-link class="nav-link" to="/employer/jobs">Available Jobs</nuxt-link>
             </li>
             <li class="nav-item pr-2">
-              <a class="nav-link" href="/employer/applications">Applications</a> 
+              <a class="nav-link" href="/employer/applications">Applications</a>
             </li>
             <li class="nav-item pr-2">
-              <a class="nav-link" href="/chats">Chats</a> 
+              <a class="nav-link" href="/chats">Chats</a>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0 pl-2 bg-transparent border-left border-secondary  ">
@@ -49,7 +49,7 @@
    background: #FCCA8F;
  }
   .nav-link{
-  width: 150px; 
+  width: 150px;
 }
 .update{
   position:absolute;
@@ -59,4 +59,4 @@
 .update:hover{
  color:var(--primary) !important
 }
-</style> 
+</style>

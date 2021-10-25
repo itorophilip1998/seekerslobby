@@ -1,7 +1,7 @@
 <template>
   <div>
     <header>
-       <nav class="navbar  navbar-expand-lg navbar-light shadow-sm bg-white fixed-top">
+       <nav id="header-section" class="navbar  navbar-expand-lg navbar-light shadow bg-white fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand font-weight-bold text-muted" href="/">SeekersLobby</a>
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
