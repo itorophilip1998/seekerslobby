@@ -336,9 +336,23 @@ button:focus, button:hover{
   border-left: 5px solid  var(--danger) !important;
 }
 
- 
-
-
+.vue-country-select .dropdown-list {
+  width: 115px !important;
+}
+li.dropdown-item>strong {
+  display: none !important;
+  background:red;
+}
+.vue-country-select
+{
+  position:absolute;
+  background:var(--white);
+  border:none !important;
+  margin-top:4px;
+  margin-left:5px;
+  border-right:1px solid grey !important;
+  border-radius: 0px !important;
+}
 
 
 

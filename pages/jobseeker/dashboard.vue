@@ -11,7 +11,7 @@
       <!-- search box -->
           <div class="search border-primary  border bg-white rounded-x p-2  pl-3">
               <i class="fa fa-search text-primary" aria-hidden="true"></i>
-            <input type="text" class="searchbox p-2 border-0 " placeholder="Job Title or Keyword">
+            <input type="text" class="searchbox p-2 border-0 " placeholder="Job Title ">
           <i class="fa fa-map-marker text-primary" aria-hidden="true"></i>
             <input type="text" class="searchbox p-2 border-0 " placeholder="Location">
             <button class="btn-primary btn rounded-x p-2 searchbtn d-inline ">Search Jobs</button>

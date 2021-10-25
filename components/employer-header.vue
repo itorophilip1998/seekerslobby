@@ -24,7 +24,7 @@
               <a class="nav-link" href="/employer/applications">Applications</a> 
             </li>
             <li class="nav-item pr-2">
-              <a class="nav-link" href="/employer/chats">Chats</a> 
+              <a class="nav-link" href="/chats">Chats</a> 
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0 pl-2 bg-transparent border-left border-secondary  ">

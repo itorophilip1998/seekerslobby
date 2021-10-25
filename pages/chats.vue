@@ -155,17 +155,32 @@ Kindly place a bid if you are interested slightly smiling face emoji.
                         1min ago
                     </div>
                     </div>
+
+
                   </div>
                </div>
+                <div class="emojis">
+                   <!-- Modal -->
+                   <div class="modal  " id="emojis" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                     <div class="modal-dialog modal-sm" role="document">
+                       <div class="modal-content">
+
+                         <div class="modal-body p-0">
+                               <VEmojiPicker @select="selectEmoji" />
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
                <div class="myinputbox col-md-5 col-lg-6 ">
 
-                 <input type="text" class="chatinput form-control" placeholder="Type here ....">
+                 <input type="text" v-model="chat.message" class="chatinput form-control" placeholder="Type here ....">
                  <div class="icons">
-                      <img src="~assets/images/smile.png"  class="mr-lg-2 link"  alt="">
-                      <img src="~assets/images/attachment.png"  class="mr-lg-3 link"  alt="">
+                      <img v-if="!chat.message" src="~assets/images/smile.png" data-toggle="modal" data-target="#emojis"  class="mr-lg-2 link"  alt="">
+                      <img v-if="!chat.message" src="~assets/images/attachment.png"  class="mr-lg-3 link"  alt="">
                     <button class="senbtn btn rounded-5 btn-sm px-3"> Send </button>
-
                  </div>
+
                </div>
         </div>
         <div class="col-md-3 rightwing ">
@@ -209,10 +224,12 @@ Kindly place a bid if you are interested slightly smiling face emoji.
 
 <script>
 import Password from 'vue-password-strength-meter';
-import employerheader from '@/components/employer-header.vue'
+import employerheader from '@/components/employer-header.vue';
+import { VEmojiPicker } from 'v-emoji-picker';
 export default {
   components:{
         Password,
+        VEmojiPicker,
         employerheader
     },
     auth:'guest',
@@ -220,13 +237,19 @@ export default {
     return {
       passwordCheckData:false,
       page1:true,
-      page2:false
+      page2:false,
+      chat:{
+        message:""
+      }
 
     }
   },
 
  methods: {
-
+   selectEmoji(emoji) {
+      // console.log(emoji)
+      this.chat.message += emoji.data
+    }
  }
 }
 </script>
@@ -393,6 +416,10 @@ background: #4CAF50;
     top: 23px;
 }
 @media only screen and (max-width: 600px) and (max-width: 768px)  {
+  .chatinput{
+   padding-right:25%;
+
+  }
   .leftwing{
     padding:0px 2px !important;
     border:none !important;

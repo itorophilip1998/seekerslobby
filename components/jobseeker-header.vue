@@ -29,7 +29,7 @@
               <nuxt-link class="nav-link" to="/jobseeker/dashboard#applications">Applications</nuxt-link>
             </li>
             <li class="nav-item pr-2">
-              <nuxt-link class="nav-link" to="/jobseeker/chats">Chats</nuxt-link>
+              <nuxt-link class="nav-link" to="/chats">Chats</nuxt-link>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0 pl-2 bg-transparent border-left border-secondary  ">

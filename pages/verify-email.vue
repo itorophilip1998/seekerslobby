@@ -8,7 +8,7 @@
       <main class="px-3 mt-5"> 
         <form @submit.prevent="verifyToken()">
           <div class="form-group">
-            <input type="email" v-model="auth_details.email" class="form-control rounded-4 text-center" name="" id="" aria-describedby="emailHelpId" placeholder="Enter Token">
+            <input type="email" v-model="auth_details.email" class="form-control pullText rounded-4 text-center" name="" id="" aria-describedby="emailHelpId" placeholder="Enter Token">
             <small id="emailHelpId" class="form-text d-none text-muted">Help text</small>
           </div> 
 
@@ -63,6 +63,9 @@ export default {
 /* .bgtxt{
   font-size:13px
 } */
+.pullText{
+  /* font  */
+}
   .googlelogo{
     width:23px;
   }

@@ -6,20 +6,20 @@
         <h6>Sign up</h6>
       </header>
       <main class="px-3 mt-5">
-        <form @submit.prevent="signupFunc()">
-
+        <form @submit.prevent="signupFunc()"> 
         <div class="google rounded-4 link border border-dark text-center  p-1">
           <img src="~assets/images/google.jpg" class="googlelogo" alt="">  Log in with Google
         </div>
-        <div class=" google  text-center mt-3  p-1 row m-0">
-            <div class="form-check form-check-inline col text-right p-0 m-0">
+        <div class=" google  text-center mt-3 p-0 row m-0">
+
+            <div :class="`form-check form-check-inline col-5 p-0 pl-1 py-2 rounded-5 mx-auto text-right p-0 m-0 border ${(auth_details.role=='jobseeker')? 'border-info shadow text-info':''}`">
               <small class="form-check-label  p-0 m-0">
-                <input class="form-check-input link"   type="radio" name="who" checked  @click="auth_details.role=='jobseeker'" >Jobseeker
+                <input class="form-check-input link"   type="radio" name="who" checked  @click="auth_details.role='jobseeker'" >I am a Jobseeker
               </small>
             </div>
-            <div class="form-check form-check-inline col ">
+            <div :class="`form-check form-check-inline col-5 p-0 pl-1 py-2 rounded-5 mx-auto border ${(auth_details.role=='employer')? 'border-info shadow text-info':''}`">
               <small class="form-check-label">
-                <input class="form-check-input link"   type="radio" name="who" id="" @click="auth_details.role=='employer'">Employer
+                <input class="form-check-input link"   type="radio" name="who" id="" @click="auth_details.role='employer'">I am an Employer
               </small>
             </div>
         </div>
@@ -93,9 +93,12 @@ export default {
       }
     }
   },
+  created() {
+    this.auth_details.role='jobseeker'
+  },
 
  methods: {
-   signupFunc(){ 
+   signupFunc(){
      this.$router.push(`/verify-email?email=${this.auth_details.email}`)
    },
    passwordCheck(data){
@@ -113,6 +116,9 @@ export default {
 </script>
 
 <style scoped>
+  .form-check-label{
+    font-size: 10px;
+  }
 /* .bgtxt{
   font-size:13px
 } */
